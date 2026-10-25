@@ -1,0 +1,377 @@
+[
+ {
+  "quote": "If this day be misty, the morning beginning with a hoar-frost, the cold weather will soon come, and a hard winter.",
+  "cond": {
+   "start": "08-24",
+   "end": "08-24",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "A wet September, drought for next summer",
+  "cond": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "08-31",
+   "var": "precip",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "If February give much snow, a fine summer it doth foreshow.",
+  "cond": {
+   "start": "02-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "08-31",
+   "var": "precip",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "If it rain on June 8th (St. Medard), it will rain forty days later.",
+  "cond": {
+   "start": "06-08",
+   "end": "06-08",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-09",
+   "end": "07-18",
+   "var": "precip",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "Ice in November brings mud in December.",
+  "cond": {
+   "start": "11-01",
+   "end": "11-30",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-01",
+   "end": "12-31",
+   "var": "precip",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "October and November cold indicate that the following January and February will be mild and dry.",
+  "cond": {
+   "start": "10-01",
+   "end": "11-30",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "01-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "When September has been rainy, the following May is generally dry",
+  "cond": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "precip",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "If the 1st of July it be rainy weather, It will rain more or less for four weeks together.",
+  "cond": {
+   "start": "07-01",
+   "end": "07-01",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "07-01",
+   "end": "07-29",
+   "var": "precip",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "Warm October, cold February.",
+  "cond": {
+   "start": "10-01",
+   "end": "10-31",
+   "var": "temp",
+   "dir": "above"
+  },
+  "out": {
+   "start": "02-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "St. Swithin's Day, an ye be fair, For forty days 'twill rain nae mair",
+  "cond": {
+   "start": "07-15",
+   "end": "07-15",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "07-15",
+   "end": "08-24",
+   "var": "precip",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "A dry May is followed by a wet June.",
+  "cond": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "06-30",
+   "var": "precip",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "If there's ice in November that will bear a duck. There'll be nothing after but sludge and muck.",
+  "cond": {
+   "start": "11-01",
+   "end": "11-30",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-01",
+   "end": "02-28",
+   "var": "precip",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "If cold at St. Peter's Day, it will last longer (shows weather for next forty days).",
+  "cond": {
+   "start": "02-22",
+   "end": "02-22",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-22",
+   "end": "04-03",
+   "var": "temp",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "If it freezes on St. Matthias' Day, it will freeze for a month together.",
+  "cond": {
+   "start": "02-24",
+   "end": "02-24",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-24",
+   "end": "03-24",
+   "var": "temp",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "As long as the sunbeam comes in on Bridget's feast-day, the snow comes before May Day.",
+  "cond": {
+   "start": "02-01",
+   "end": "02-01",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-01",
+   "end": "05-01",
+   "var": "temp",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "If on St. Lawrence's Day the weather be fine, fair autumn and good wine may be hoped for.",
+  "cond": {
+   "start": "08-10",
+   "end": "08-10",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "09-01",
+   "end": "11-30",
+   "var": "precip",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "Whenever the latter part of February and beginning of March are dry, there will be a deficiency of rain up to Midsummer Day.",
+  "cond": {
+   "start": "02-15",
+   "end": "03-10",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "03-10",
+   "end": "06-24",
+   "var": "precip",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "If it rains on St. Mary's Day, it will rain for four weeks.",
+  "cond": {
+   "start": "07-02",
+   "end": "07-02",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "07-02",
+   "end": "07-30",
+   "var": "precip",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "If the geese at Martin's Day stand on ice, they will walk in mud at Christmas.",
+  "cond": {
+   "start": "11-11",
+   "end": "11-11",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-25",
+   "end": "12-25",
+   "var": "precip",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "If the eighteen last days of February be wet, and the first ten of March, the spring quarter and summer too will prove too wet.",
+  "cond": {
+   "start": "02-11",
+   "end": "03-10",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "03-25",
+   "end": "09-29",
+   "var": "precip",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "If it rain on June 19th (St. Protais), it rains for forty days after.",
+  "cond": {
+   "start": "06-19",
+   "end": "06-19",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-20",
+   "end": "07-29",
+   "var": "precip",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "If All Saints' Day will bring out the winter, St. Martin's Day will bring out Indian summer.",
+  "cond": {
+   "start": "11-01",
+   "end": "11-01",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "11-11",
+   "end": "11-11",
+   "var": "temp",
+   "dir": "above"
+  }
+ },
+ {
+  "quote": "If the hart and the hind meet dry and part dry on Rood Day fair, for sax weeks, of rain there'll be nae mail.",
+  "cond": {
+   "start": "09-14",
+   "end": "09-14",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "09-14",
+   "end": "10-26",
+   "var": "precip",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "If ducks do swim at Hollantide, At Christmas they will slide.",
+  "cond": {
+   "start": "11-01",
+   "end": "11-01",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "12-25",
+   "end": "12-25",
+   "var": "temp",
+   "dir": "below"
+  }
+ },
+ {
+  "quote": "If Marie's purifying dale be cleare and bright with sunnie raie, then frost and cold shall be much more after the feast.",
+  "cond": {
+   "start": "02-02",
+   "end": "02-02",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-03",
+   "end": "03-31",
+   "var": "temp",
+   "dir": "below"
+  }
+ }
+]

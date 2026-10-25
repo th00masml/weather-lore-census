@@ -1,0 +1,1598 @@
+[
+ {
+  "quote": "If there is no snow before January, there will be the more in March and April.",
+  "cond": {
+   "start": "12-01",
+   "end": "12-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "03-01",
+   "end": "04-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.679,
+  "fdr_significant": false
+ },
+ {
+  "quote": "March in Janiveer, Janiveer in March, I fear.",
+  "cond": {
+   "start": "01-01",
+   "end": "01-31",
+   "var": "temp",
+   "dir": "above"
+  },
+  "out": {
+   "start": "03-01",
+   "end": "03-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.1496,
+  "p_value": 0.024,
+  "fdr_significant": false
+ },
+ {
+  "quote": "A warm January, a cold May.",
+  "cond": {
+   "start": "01-01",
+   "end": "01-31",
+   "var": "temp",
+   "dir": "above"
+  },
+  "out": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.0551,
+  "p_value": 0.443,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If St. Paul's Day be fine, the year will be the same.",
+  "cond": {
+   "start": "01-25",
+   "end": "01-25",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "01-25",
+   "end": "01-24",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1578,
+  "p_value": 0.134,
+  "fdr_significant": false
+ },
+ {
+  "quote": "February fill dyke; March lick it out.",
+  "cond": {
+   "start": "02-01",
+   "end": "02-28",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "03-01",
+   "end": "03-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.0736,
+  "p_value": 0.537,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If February give much snow, a fine summer it doth foreshow.",
+  "cond": {
+   "start": "02-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "08-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1999,
+  "p_value": 0.062,
+  "fdr_significant": false
+ },
+ {
+  "quote": "Whenever the latter part of February and beginning of March are dry, there will be a deficiency of rain up to Midsummer Day.",
+  "cond": {
+   "start": "02-15",
+   "end": "03-10",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "03-10",
+   "end": "06-24",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1157,
+  "p_value": 0.318,
+  "fdr_significant": false
+ },
+ {
+  "quote": "For every thunder with rain in February there will be a cold spell in May.",
+  "cond": {
+   "start": "02-01",
+   "end": "02-28",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.0315,
+  "p_value": 0.837,
+  "fdr_significant": false
+ },
+ {
+  "quote": "As long as the sunbeam comes in on Bridget's feast-day, the snow comes before May Day.",
+  "cond": {
+   "start": "02-01",
+   "end": "02-01",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-01",
+   "end": "05-01",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.0736,
+  "p_value": 0.53,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If Marie's purifying dale be cleare and bright with sunnie raie, then frost and cold shall be much more after the feast.",
+  "cond": {
+   "start": "02-02",
+   "end": "02-02",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-03",
+   "end": "03-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.7,
+  "fdr_significant": false
+ },
+ {
+  "quote": "As far as the sun shines in on Candlemas Day, So far will the snow blow in afore old May.",
+  "cond": {
+   "start": "02-02",
+   "end": "02-02",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-02",
+   "end": "05-13",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.137,
+  "p_value": 0.218,
+  "fdr_significant": false
+ },
+ {
+  "quote": "Should the sun shine out at the Purification, there will be more ice after the festival than there was before it.",
+  "cond": {
+   "start": "02-02",
+   "end": "02-02",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-02",
+   "end": "03-25",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.691,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If Candlemas Day bring clouds and rain, Winter is gone and won't come again.",
+  "cond": {
+   "start": "02-02",
+   "end": "02-02",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "02-02",
+   "end": "03-25",
+   "var": "temp",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0949,
+  "p_value": 0.418,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If a storm on February 2nd, spring is near.",
+  "cond": {
+   "start": "02-02",
+   "end": "02-02",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "02-02",
+   "end": "03-01",
+   "var": "temp",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.707,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If that day be bright and clear, the spring will be late.",
+  "cond": {
+   "start": "02-02",
+   "end": "02-02",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-02",
+   "end": "04-01",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0106,
+  "p_value": 1.0,
+  "fdr_significant": false
+ },
+ {
+  "quote": "When drops hang on the fence on February 2nd, icicles will hang thereon March 25th.",
+  "cond": {
+   "start": "02-02",
+   "end": "02-02",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "03-25",
+   "end": "03-25",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.074,
+  "p_value": 0.533,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If the eighteen last days of February be wet, and the first ten of March, the spring quarter and summer too will prove too wet.",
+  "cond": {
+   "start": "02-11",
+   "end": "03-10",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "03-25",
+   "end": "09-29",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0106,
+  "p_value": 1.0,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If cold at St. Peter's Day, it will last longer (shows weather for next forty days).",
+  "cond": {
+   "start": "02-22",
+   "end": "02-22",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-22",
+   "end": "04-03",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.4921259842519685,
+  "skill": 0.2757,
+  "p_value": 0.0,
+  "fdr_significant": true
+ },
+ {
+  "quote": "If it freezes on St. Matthias' Day, it will freeze for a month together.",
+  "cond": {
+   "start": "02-24",
+   "end": "02-24",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-24",
+   "end": "03-24",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.49606299212598426,
+  "skill": 0.2992,
+  "p_value": 0.0,
+  "fdr_significant": true
+ },
+ {
+  "quote": "St. Matthias breaks the ice; if he finds none, he will make it.",
+  "cond": {
+   "start": "02-24",
+   "end": "02-24",
+   "var": "temp",
+   "dir": "above"
+  },
+  "out": {
+   "start": "02-24",
+   "end": "03-24",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.4881889763779528,
+  "skill": -0.2994,
+  "p_value": 0.0,
+  "fdr_significant": true
+ },
+ {
+  "quote": "March comes in like a lion and goes out like a lamb.",
+  "cond": {
+   "start": "03-01",
+   "end": "03-10",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "03-21",
+   "end": "03-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.686,
+  "fdr_significant": false
+ },
+ {
+  "quote": "March comes in like a lamb and goes out like a lion.",
+  "cond": {
+   "start": "03-01",
+   "end": "03-10",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "03-21",
+   "end": "03-31",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0949,
+  "p_value": 0.4,
+  "fdr_significant": false
+ },
+ {
+  "quote": "So many frosts in March, so many in May.",
+  "cond": {
+   "start": "03-01",
+   "end": "03-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": 0.1654,
+  "p_value": 0.012,
+  "fdr_significant": true
+ },
+ {
+  "quote": "As it rains in March, so it rains in June.",
+  "cond": {
+   "start": "03-01",
+   "end": "03-31",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "06-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.137,
+  "p_value": 0.233,
+  "fdr_significant": false
+ },
+ {
+  "quote": "High winds on these days [borrowing days, late March], a dry summer to follow",
+  "cond": {
+   "start": "03-29",
+   "end": "04-01",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "08-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.687,
+  "fdr_significant": false
+ },
+ {
+  "quote": "After a wet April a dry June.",
+  "cond": {
+   "start": "04-01",
+   "end": "04-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "06-30",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.0736,
+  "p_value": 0.523,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If the first three days of April be foggy, there will be a flood in June.",
+  "cond": {
+   "start": "04-01",
+   "end": "04-03",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "06-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0106,
+  "p_value": 1.0,
+  "fdr_significant": false
+ },
+ {
+  "quote": "A dry May is followed by a wet June.",
+  "cond": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "06-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.0736,
+  "p_value": 0.539,
+  "fdr_significant": false
+ },
+ {
+  "quote": "Wet May, dry July.",
+  "cond": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "07-01",
+   "end": "07-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0106,
+  "p_value": 1.0,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If May be cold and wet, September will be warm and dry, and vice-versa.",
+  "cond": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "temp",
+   "dir": "above"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.1181,
+  "p_value": 0.076,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If May be cold and wet, September will be warm and dry, and vice-versa.",
+  "cond": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.699,
+  "fdr_significant": false
+ },
+ {
+  "quote": "Storms from the east or south-east, between 17th and 23rd of March, indicate a wet summer.",
+  "cond": {
+   "start": "03-17",
+   "end": "03-23",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "08-31",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.689,
+  "fdr_significant": false
+ },
+ {
+  "quote": "A wet June makes a dry September.",
+  "cond": {
+   "start": "06-01",
+   "end": "06-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.0315,
+  "p_value": 0.852,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If it rain on June 8th (St. Medard), it will rain forty days later.",
+  "cond": {
+   "start": "06-08",
+   "end": "06-08",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-09",
+   "end": "07-18",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1157,
+  "p_value": 0.313,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If it rain on June 19th (St. Protais), it rains for forty days after.",
+  "cond": {
+   "start": "06-19",
+   "end": "06-19",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-20",
+   "end": "07-29",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.0736,
+  "p_value": 0.514,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If St. Vitus's Day be rainy weather, it will rain for thirty days together.",
+  "cond": {
+   "start": "06-15",
+   "end": "06-15",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-16",
+   "end": "07-15",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.4842105263157895,
+  "skill": 0.2631,
+  "p_value": 0.02,
+  "fdr_significant": false
+ },
+ {
+  "quote": "When it is hottest in June, it will be coldest in the corresponding days of the next February.",
+  "cond": {
+   "start": "06-01",
+   "end": "06-30",
+   "var": "temp",
+   "dir": "above"
+  },
+  "out": {
+   "start": "02-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.0472,
+  "p_value": 0.522,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If it rains on June 27th, it will rain seven weeks.",
+  "cond": {
+   "start": "06-27",
+   "end": "06-27",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-27",
+   "end": "08-15",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1999,
+  "p_value": 0.064,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If the 1st of July it be rainy weather, It will rain more or less for four weeks together.",
+  "cond": {
+   "start": "07-01",
+   "end": "07-01",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "07-01",
+   "end": "07-29",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.242,
+  "p_value": 0.025,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If it rains on St. Mary's Day, it will rain for four weeks.",
+  "cond": {
+   "start": "07-02",
+   "end": "07-02",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "07-02",
+   "end": "07-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1157,
+  "p_value": 0.308,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If it rains on first dog-day, it will rain for forty days after.",
+  "cond": {
+   "start": "07-03",
+   "end": "07-03",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "07-03",
+   "end": "08-12",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.242,
+  "p_value": 0.03,
+  "fdr_significant": false
+ },
+ {
+  "quote": "Bullion's Day, gif ye be fair, For forty days 'twill rain nae mair.",
+  "cond": {
+   "start": "07-04",
+   "end": "07-04",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "07-04",
+   "end": "08-13",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1999,
+  "p_value": 0.073,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If it rains on July 10th, it will rain for seven weeks.",
+  "cond": {
+   "start": "07-10",
+   "end": "07-10",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "07-10",
+   "end": "08-28",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1157,
+  "p_value": 0.302,
+  "fdr_significant": false
+ },
+ {
+  "quote": "When the months of July, August, and September are unusually hot, January will be the coldest month.",
+  "cond": {
+   "start": "07-01",
+   "end": "09-30",
+   "var": "temp",
+   "dir": "above"
+  },
+  "out": {
+   "start": "01-01",
+   "end": "01-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.1654,
+  "p_value": 0.014,
+  "fdr_significant": true
+ },
+ {
+  "quote": "If St. Swithin weep, that year, the proverb says, The weather will be foul for forty days.",
+  "cond": {
+   "start": "07-15",
+   "end": "07-15",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "07-15",
+   "end": "08-24",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0949,
+  "p_value": 0.417,
+  "fdr_significant": false
+ },
+ {
+  "quote": "St. Swithin's Day, an ye be fair, For forty days 'twill rain nae mair",
+  "cond": {
+   "start": "07-15",
+   "end": "07-15",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "07-15",
+   "end": "08-24",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.4842105263157895,
+  "skill": -0.0741,
+  "p_value": 0.541,
+  "fdr_significant": false
+ },
+ {
+  "quote": "Thunderstorms in the beginning of August will generally be followed by others all the month.",
+  "cond": {
+   "start": "08-01",
+   "end": "08-10",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "08-01",
+   "end": "08-31",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.4105,
+  "p_value": 0.0,
+  "fdr_significant": true
+ },
+ {
+  "quote": "If the first week in August is unusually warm, the winter will be white and long.",
+  "cond": {
+   "start": "08-01",
+   "end": "08-07",
+   "var": "temp",
+   "dir": "above"
+  },
+  "out": {
+   "start": "12-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 253,
+  "status": "ok",
+  "p_cond": 0.4980237154150198,
+  "skill": -0.1384,
+  "p_value": 0.037,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If on St. Lawrence's Day the weather be fine, fair autumn and good wine may be hoped for.",
+  "cond": {
+   "start": "08-10",
+   "end": "08-10",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "09-01",
+   "end": "11-30",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.137,
+  "p_value": 0.211,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If this day be misty, the morning beginning with a hoar-frost, the cold weather will soon come, and a hard winter.",
+  "cond": {
+   "start": "08-24",
+   "end": "08-24",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 253,
+  "status": "ok",
+  "p_cond": 0.48616600790513836,
+  "skill": 0.0276,
+  "p_value": 0.718,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If it rains this day, it will rain the forty days after.",
+  "cond": {
+   "start": "08-24",
+   "end": "08-24",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "08-25",
+   "end": "10-03",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.671,
+  "fdr_significant": false
+ },
+ {
+  "quote": "When September has been rainy, the following May is generally dry",
+  "cond": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.713,
+  "fdr_significant": false
+ },
+ {
+  "quote": "When May is dry, the following September is apt to be wet",
+  "cond": {
+   "start": "05-01",
+   "end": "05-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.699,
+  "fdr_significant": false
+ },
+ {
+  "quote": "A wet September, drought for next summer",
+  "cond": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "06-01",
+   "end": "08-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.0527,
+  "p_value": 0.661,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If the storms in September clear off warm, all the storms of the following winter will be warm.",
+  "cond": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "temp",
+   "dir": "above"
+  },
+  "out": {
+   "start": "12-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "above"
+  },
+  "n_years": 253,
+  "status": "ok",
+  "p_cond": 0.4980237154150198,
+  "skill": 0.1779,
+  "p_value": 0.003,
+  "fdr_significant": true
+ },
+ {
+  "quote": "When a cold spell occurs in September and passes without a frost, a frost will not occur until the same time in October.",
+  "cond": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "10-01",
+   "end": "10-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": 0.1969,
+  "p_value": 0.002,
+  "fdr_significant": true
+ },
+ {
+  "quote": "Fair on September 1st, fair for the month.",
+  "cond": {
+   "start": "09-01",
+   "end": "09-01",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "09-01",
+   "end": "09-30",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1999,
+  "p_value": 0.08,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If the hart and the hind meet dry and part dry on Rood Day fair, for sax weeks, of rain there'll be nae mail.",
+  "cond": {
+   "start": "09-14",
+   "end": "09-14",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "09-14",
+   "end": "10-26",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1157,
+  "p_value": 0.309,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If it does not rain on St. Michael's and Gallus, a dry spring is indicated for the next year.",
+  "cond": {
+   "start": "09-29",
+   "end": "10-16",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "03-01",
+   "end": "05-31",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1578,
+  "p_value": 0.14,
+  "fdr_significant": false
+ },
+ {
+  "quote": "When it freezes and snows in October, January will bring mild weather.",
+  "cond": {
+   "start": "10-01",
+   "end": "10-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "01-01",
+   "end": "01-31",
+   "var": "temp",
+   "dir": "above"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.1339,
+  "p_value": 0.045,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If October bring heavy frosts and winds, then will January and February be mild.",
+  "cond": {
+   "start": "10-01",
+   "end": "10-31",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "01-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "above"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.1181,
+  "p_value": 0.07,
+  "fdr_significant": false
+ },
+ {
+  "quote": "Warm October, cold February.",
+  "cond": {
+   "start": "10-01",
+   "end": "10-31",
+   "var": "temp",
+   "dir": "above"
+  },
+  "out": {
+   "start": "02-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.1417,
+  "p_value": 0.024,
+  "fdr_significant": false
+ },
+ {
+  "quote": "October and November cold indicate that the following January and February will be mild and dry.",
+  "cond": {
+   "start": "10-01",
+   "end": "11-30",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "01-01",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "above"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.1496,
+  "p_value": 0.025,
+  "fdr_significant": false
+ },
+ {
+  "quote": "October and November cold indicate that the following January and February will be mild and dry.",
+  "cond": {
+   "start": "10-01",
+   "end": "11-30",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "01-01",
+   "end": "02-28",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1578,
+  "p_value": 0.167,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If there's ice in November that will bear a duck. There'll be nothing after but sludge and muck.",
+  "cond": {
+   "start": "11-01",
+   "end": "11-30",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-01",
+   "end": "02-28",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 94,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.0638,
+  "p_value": 0.635,
+  "fdr_significant": false
+ },
+ {
+  "quote": "Ice in November brings mud in December.",
+  "cond": {
+   "start": "11-01",
+   "end": "11-30",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-01",
+   "end": "12-31",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.1791,
+  "p_value": 0.097,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If All Saints' Day will bring out the winter, St. Martin's Day will bring out Indian summer.",
+  "cond": {
+   "start": "11-01",
+   "end": "11-01",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "11-11",
+   "end": "11-11",
+   "var": "temp",
+   "dir": "above"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.1654,
+  "p_value": 0.012,
+  "fdr_significant": true
+ },
+ {
+  "quote": "If this day (All Saints') be fair, the next winter will bring but little rain and snow along with it.",
+  "cond": {
+   "start": "11-01",
+   "end": "11-01",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-01",
+   "end": "02-28",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 94,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.0213,
+  "p_value": 1.0,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If ducks do swim at Hollantide, At Christmas they will slide.",
+  "cond": {
+   "start": "11-01",
+   "end": "11-01",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "12-25",
+   "end": "12-25",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1999,
+  "p_value": 0.051,
+  "fdr_significant": false
+ },
+ {
+  "quote": "If the geese at Martin's Day stand on ice, they will walk in mud at Christmas.",
+  "cond": {
+   "start": "11-11",
+   "end": "11-11",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-25",
+   "end": "12-25",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.4842105263157895,
+  "skill": -0.0741,
+  "p_value": 0.528,
+  "fdr_significant": false
+ },
+ {
+  "quote": "As at Catherine foul or fair, so will be the next February.",
+  "cond": {
+   "start": "11-25",
+   "end": "11-25",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "02-01",
+   "end": "02-28",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.137,
+  "p_value": 0.206,
+  "fdr_significant": false
+ },
+ {
+  "quote": "As at Catherine foul or fair, so will be the next February.",
+  "cond": {
+   "start": "11-25",
+   "end": "11-25",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "02-01",
+   "end": "02-28",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": -0.1791,
+  "p_value": 0.105,
+  "fdr_significant": false
+ },
+ {
+  "quote": "Frost on the shortest day is said to indicate a severe winter.",
+  "cond": {
+   "start": "12-21",
+   "end": "12-21",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-22",
+   "end": "02-28",
+   "var": "temp",
+   "dir": "below"
+  },
+  "n_years": 253,
+  "status": "ok",
+  "p_cond": 0.49407114624505927,
+  "skill": 0.2016,
+  "p_value": 0.0,
+  "fdr_significant": true
+ },
+ {
+  "quote": "If ice will bear a man before Christmas, it will not bear a mouse afterwards.",
+  "cond": {
+   "start": "12-01",
+   "end": "12-24",
+   "var": "temp",
+   "dir": "below"
+  },
+  "out": {
+   "start": "12-26",
+   "end": "12-31",
+   "var": "temp",
+   "dir": "above"
+  },
+  "n_years": 254,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": -0.2126,
+  "p_value": 0.003,
+  "fdr_significant": true
+ },
+ {
+  "quote": "If it rain much during the twelve days after Christmas, it will be a wet year.",
+  "cond": {
+   "start": "12-26",
+   "end": "01-06",
+   "var": "precip",
+   "dir": "above"
+  },
+  "out": {
+   "start": "01-01",
+   "end": "12-31",
+   "var": "precip",
+   "dir": "above"
+  },
+  "n_years": 94,
+  "status": "ok",
+  "p_cond": 0.5,
+  "skill": 0.1064,
+  "p_value": 0.42,
+  "fdr_significant": false
+ },
+ {
+  "quote": "As the equinoctial storms clear, so will all storms clear for the six months.",
+  "cond": {
+   "start": "03-21",
+   "end": "03-21",
+   "var": "precip",
+   "dir": "below"
+  },
+  "out": {
+   "start": "03-21",
+   "end": "09-21",
+   "var": "precip",
+   "dir": "below"
+  },
+  "n_years": 95,
+  "status": "ok",
+  "p_cond": 0.49473684210526314,
+  "skill": 0.1578,
+  "p_value": 0.148,
+  "fdr_significant": false
+ }
+]

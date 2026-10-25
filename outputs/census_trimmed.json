@@ -1,0 +1,452 @@
+[
+ {
+  "quote": "If there is no snow before January, there will be the more in March and April.",
+  "skill": -0.0527,
+  "p": 0.679,
+  "n": 95
+ },
+ {
+  "quote": "March in Janiveer, Janiveer in March, I fear.",
+  "skill": -0.1496,
+  "p": 0.024,
+  "n": 254
+ },
+ {
+  "quote": "A warm January, a cold May.",
+  "skill": -0.0551,
+  "p": 0.443,
+  "n": 254
+ },
+ {
+  "quote": "If St. Paul's Day be fine, the year will be the same.",
+  "skill": 0.1157,
+  "p": 0.299,
+  "n": 95
+ },
+ {
+  "quote": "February fill dyke; March lick it out.",
+  "skill": 0.0736,
+  "p": 0.537,
+  "n": 95
+ },
+ {
+  "quote": "If February give much snow, a fine summer it doth foreshow.",
+  "skill": 0.1999,
+  "p": 0.062,
+  "n": 95
+ },
+ {
+  "quote": "Whenever the latter part of February and beginning of March are dry, there will be a deficiency of rain up to Midsummer Day.",
+  "skill": 0.1157,
+  "p": 0.318,
+  "n": 95
+ },
+ {
+  "quote": "For every thunder with rain in February there will be a cold spell in May.",
+  "skill": 0.0315,
+  "p": 0.837,
+  "n": 95
+ },
+ {
+  "quote": "As long as the sunbeam comes in on Bridget's feast-day, the snow comes before May Day.",
+  "skill": 0.0736,
+  "p": 0.545,
+  "n": 95
+ },
+ {
+  "quote": "If Marie's purifying dale be cleare and bright with sunnie raie, then frost and cold shall be much more after the feast.",
+  "skill": -0.0527,
+  "p": 0.7,
+  "n": 95
+ },
+ {
+  "quote": "As far as the sun shines in on Candlemas Day, So far will the snow blow in afore old May.",
+  "skill": -0.137,
+  "p": 0.218,
+  "n": 95
+ },
+ {
+  "quote": "Should the sun shine out at the Purification, there will be more ice after the festival than there was before it.",
+  "skill": -0.0949,
+  "p": 0.422,
+  "n": 95
+ },
+ {
+  "quote": "If Candlemas Day bring clouds and rain, Winter is gone and won't come again.",
+  "skill": -0.137,
+  "p": 0.249,
+  "n": 95
+ },
+ {
+  "quote": "If a storm on February 2nd, spring is near.",
+  "skill": -0.0949,
+  "p": 0.43,
+  "n": 95
+ },
+ {
+  "quote": "If that day be bright and clear, the spring will be late.",
+  "skill": -0.0106,
+  "p": 1.0,
+  "n": 95
+ },
+ {
+  "quote": "When drops hang on the fence on February 2nd, icicles will hang thereon March 25th.",
+  "skill": -0.074,
+  "p": 0.533,
+  "n": 95
+ },
+ {
+  "quote": "If the eighteen last days of February be wet, and the first ten of March, the spring quarter and summer too will prove too wet.",
+  "skill": -0.0106,
+  "p": 1.0,
+  "n": 95
+ },
+ {
+  "quote": "If cold at St. Peter's Day, it will last longer (shows weather for next forty days).",
+  "skill": 0.2599,
+  "p": 0.0,
+  "n": 254
+ },
+ {
+  "quote": "If it freezes on St. Matthias' Day, it will freeze for a month together.",
+  "skill": 0.2835,
+  "p": 0.0,
+  "n": 254
+ },
+ {
+  "quote": "St. Matthias breaks the ice; if he finds none, he will make it.",
+  "skill": -0.2836,
+  "p": 0.0,
+  "n": 254
+ },
+ {
+  "quote": "March comes in like a lion and goes out like a lamb.",
+  "skill": -0.0527,
+  "p": 0.686,
+  "n": 95
+ },
+ {
+  "quote": "March comes in like a lamb and goes out like a lion.",
+  "skill": -0.0949,
+  "p": 0.4,
+  "n": 95
+ },
+ {
+  "quote": "So many frosts in March, so many in May.",
+  "skill": 0.1654,
+  "p": 0.012,
+  "n": 254
+ },
+ {
+  "quote": "As it rains in March, so it rains in June.",
+  "skill": -0.137,
+  "p": 0.233,
+  "n": 95
+ },
+ {
+  "quote": "High winds on these days [borrowing days, late March], a dry summer to follow",
+  "skill": -0.0527,
+  "p": 0.687,
+  "n": 95
+ },
+ {
+  "quote": "After a wet April a dry June.",
+  "skill": 0.0736,
+  "p": 0.523,
+  "n": 95
+ },
+ {
+  "quote": "If the first three days of April be foggy, there will be a flood in June.",
+  "skill": -0.0106,
+  "p": 1.0,
+  "n": 95
+ },
+ {
+  "quote": "A dry May is followed by a wet June.",
+  "skill": 0.0736,
+  "p": 0.539,
+  "n": 95
+ },
+ {
+  "quote": "Wet May, dry July.",
+  "skill": -0.0106,
+  "p": 1.0,
+  "n": 95
+ },
+ {
+  "quote": "If May be cold and wet, September will be warm and dry, and vice-versa.",
+  "skill": -0.1181,
+  "p": 0.076,
+  "n": 254
+ },
+ {
+  "quote": "If May be cold and wet, September will be warm and dry, and vice-versa.",
+  "skill": -0.0527,
+  "p": 0.699,
+  "n": 95
+ },
+ {
+  "quote": "Storms from the east or south-east, between 17th and 23rd of March, indicate a wet summer.",
+  "skill": -0.0527,
+  "p": 0.689,
+  "n": 95
+ },
+ {
+  "quote": "A wet June makes a dry September.",
+  "skill": 0.0315,
+  "p": 0.852,
+  "n": 95
+ },
+ {
+  "quote": "If it rain on June 8th (St. Medard), it will rain forty days later.",
+  "skill": 0.1157,
+  "p": 0.313,
+  "n": 95
+ },
+ {
+  "quote": "If it rain on June 19th (St. Protais), it rains for forty days after.",
+  "skill": 0.0736,
+  "p": 0.514,
+  "n": 95
+ },
+ {
+  "quote": "If St. Vitus's Day be rainy weather, it will rain for thirty days together.",
+  "skill": 0.2631,
+  "p": 0.02,
+  "n": 95
+ },
+ {
+  "quote": "When it is hottest in June, it will be coldest in the corresponding days of the next February.",
+  "skill": -0.0472,
+  "p": 0.522,
+  "n": 254
+ },
+ {
+  "quote": "If it rains on June 27th, it will rain seven weeks.",
+  "skill": 0.1578,
+  "p": 0.145,
+  "n": 95
+ },
+ {
+  "quote": "If the 1st of July it be rainy weather, It will rain more or less for four weeks together.",
+  "skill": 0.1999,
+  "p": 0.074,
+  "n": 95
+ },
+ {
+  "quote": "If it rains on St. Mary's Day, it will rain for four weeks.",
+  "skill": -0.0527,
+  "p": 0.668,
+  "n": 95
+ },
+ {
+  "quote": "If it rains on first dog-day, it will rain for forty days after.",
+  "skill": 0.1999,
+  "p": 0.071,
+  "n": 95
+ },
+ {
+  "quote": "Bullion's Day, gif ye be fair, For forty days 'twill rain nae mair.",
+  "skill": 0.1578,
+  "p": 0.158,
+  "n": 95
+ },
+ {
+  "quote": "If it rains on July 10th, it will rain for seven weeks.",
+  "skill": 0.0736,
+  "p": 0.516,
+  "n": 95
+ },
+ {
+  "quote": "When the months of July, August, and September are unusually hot, January will be the coldest month.",
+  "skill": -0.1654,
+  "p": 0.014,
+  "n": 254
+ },
+ {
+  "quote": "If St. Swithin weep, that year, the proverb says, The weather will be foul for forty days.",
+  "skill": -0.137,
+  "p": 0.221,
+  "n": 95
+ },
+ {
+  "quote": "St. Swithin's Day, an ye be fair, For forty days 'twill rain nae mair",
+  "skill": -0.1584,
+  "p": 0.143,
+  "n": 95
+ },
+ {
+  "quote": "Thunderstorms in the beginning of August will generally be followed by others all the month.",
+  "skill": 0.1578,
+  "p": 0.151,
+  "n": 95
+ },
+ {
+  "quote": "If the first week in August is unusually warm, the winter will be white and long.",
+  "skill": -0.0909,
+  "p": 0.153,
+  "n": 253
+ },
+ {
+  "quote": "If on St. Lawrence's Day the weather be fine, fair autumn and good wine may be hoped for.",
+  "skill": -0.137,
+  "p": 0.211,
+  "n": 95
+ },
+ {
+  "quote": "If this day be misty, the morning beginning with a hoar-frost, the cold weather will soon come, and a hard winter.",
+  "skill": 0.0276,
+  "p": 0.721,
+  "n": 253
+ },
+ {
+  "quote": "If it rains this day, it will rain the forty days after.",
+  "skill": -0.0527,
+  "p": 0.671,
+  "n": 95
+ },
+ {
+  "quote": "When September has been rainy, the following May is generally dry",
+  "skill": -0.0527,
+  "p": 0.713,
+  "n": 95
+ },
+ {
+  "quote": "When May is dry, the following September is apt to be wet",
+  "skill": -0.0527,
+  "p": 0.699,
+  "n": 95
+ },
+ {
+  "quote": "A wet September, drought for next summer",
+  "skill": -0.0527,
+  "p": 0.661,
+  "n": 95
+ },
+ {
+  "quote": "If the storms in September clear off warm, all the storms of the following winter will be warm.",
+  "skill": 0.1937,
+  "p": 0.004,
+  "n": 253
+ },
+ {
+  "quote": "When a cold spell occurs in September and passes without a frost, a frost will not occur until the same time in October.",
+  "skill": 0.1969,
+  "p": 0.002,
+  "n": 254
+ },
+ {
+  "quote": "Fair on September 1st, fair for the month.",
+  "skill": 0.1999,
+  "p": 0.084,
+  "n": 95
+ },
+ {
+  "quote": "If the hart and the hind meet dry and part dry on Rood Day fair, for sax weeks, of rain there'll be nae mail.",
+  "skill": 0.1157,
+  "p": 0.314,
+  "n": 95
+ },
+ {
+  "quote": "If it does not rain on St. Michael's and Gallus, a dry spring is indicated for the next year.",
+  "skill": 0.1578,
+  "p": 0.14,
+  "n": 95
+ },
+ {
+  "quote": "When it freezes and snows in October, January will bring mild weather.",
+  "skill": -0.1339,
+  "p": 0.045,
+  "n": 254
+ },
+ {
+  "quote": "If October bring heavy frosts and winds, then will January and February be mild.",
+  "skill": -0.1181,
+  "p": 0.07,
+  "n": 254
+ },
+ {
+  "quote": "Warm October, cold February.",
+  "skill": -0.1417,
+  "p": 0.024,
+  "n": 254
+ },
+ {
+  "quote": "October and November cold indicate that the following January and February will be mild and dry.",
+  "skill": -0.1496,
+  "p": 0.025,
+  "n": 254
+ },
+ {
+  "quote": "October and November cold indicate that the following January and February will be mild and dry.",
+  "skill": 0.1578,
+  "p": 0.167,
+  "n": 95
+ },
+ {
+  "quote": "If there's ice in November that will bear a duck. There'll be nothing after but sludge and muck.",
+  "skill": -0.1489,
+  "p": 0.185,
+  "n": 94
+ },
+ {
+  "quote": "Ice in November brings mud in December.",
+  "skill": -0.1791,
+  "p": 0.097,
+  "n": 95
+ },
+ {
+  "quote": "If All Saints' Day will bring out the winter, St. Martin's Day will bring out Indian summer.",
+  "skill": -0.1654,
+  "p": 0.012,
+  "n": 254
+ },
+ {
+  "quote": "If this day (All Saints') be fair, the next winter will bring but little rain and snow along with it.",
+  "skill": -0.0213,
+  "p": 1.0,
+  "n": 94
+ },
+ {
+  "quote": "If ducks do swim at Hollantide, At Christmas they will slide.",
+  "skill": 0.1999,
+  "p": 0.051,
+  "n": 95
+ },
+ {
+  "quote": "If the geese at Martin's Day stand on ice, they will walk in mud at Christmas.",
+  "skill": -0.0741,
+  "p": 0.528,
+  "n": 95
+ },
+ {
+  "quote": "As at Catherine foul or fair, so will be the next February.",
+  "skill": -0.137,
+  "p": 0.206,
+  "n": 95
+ },
+ {
+  "quote": "As at Catherine foul or fair, so will be the next February.",
+  "skill": -0.1791,
+  "p": 0.105,
+  "n": 95
+ },
+ {
+  "quote": "Frost on the shortest day is said to indicate a severe winter.",
+  "skill": 0.2016,
+  "p": 0.0,
+  "n": 253
+ },
+ {
+  "quote": "If ice will bear a man before Christmas, it will not bear a mouse afterwards.",
+  "skill": -0.2126,
+  "p": 0.003,
+  "n": 254
+ },
+ {
+  "quote": "As the equinoctial storms clear, so will all storms clear for the six months.",
+  "skill": 0.0736,
+  "p": 0.545,
+  "n": 95
+ }
+]

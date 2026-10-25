@@ -1,0 +1,15 @@
+.venv/
+data/raw/
+__pycache__/
+*.pyc
+venv/
+.vocab_cache/
+node_modules/
+.env
+.env.*
+*.pem
+*.key
+*.safetensors
+*.gguf
+*.pt
+.DS_Store
