@@ -1,8 +1,8 @@
 [
  {
   "quote": "If there is no snow before January, there will be the more in March and April.",
-  "skill": -0.0527,
-  "p": 0.679,
+  "skill": 0.0315,
+  "p": 0.832,
   "n": 95
  },
  {
@@ -19,8 +19,8 @@
  },
  {
   "quote": "If St. Paul's Day be fine, the year will be the same.",
-  "skill": 0.1157,
-  "p": 0.299,
+  "skill": 0.1578,
+  "p": 0.139,
   "n": 95
  },
  {
@@ -217,8 +217,8 @@
  },
  {
   "quote": "When it is hottest in June, it will be coldest in the corresponding days of the next February.",
-  "skill": -0.0472,
-  "p": 0.522,
+  "skill": -0.0394,
+  "p": 0.617,
   "n": 254
  },
  {
@@ -259,8 +259,8 @@
  },
  {
   "quote": "When the months of July, August, and September are unusually hot, January will be the coldest month.",
-  "skill": -0.1654,
-  "p": 0.014,
+  "skill": -0.1102,
+  "p": 0.103,
   "n": 254
  },
  {
@@ -283,51 +283,51 @@
  },
  {
   "quote": "If the first week in August is unusually warm, the winter will be white and long.",
-  "skill": -0.0909,
-  "p": 0.153,
-  "n": 253
+  "skill": -0.0394,
+  "p": 0.605,
+  "n": 254
  },
  {
   "quote": "If on St. Lawrence's Day the weather be fine, fair autumn and good wine may be hoped for.",
   "skill": -0.137,
-  "p": 0.211,
+  "p": 0.233,
   "n": 95
  },
  {
   "quote": "If this day be misty, the morning beginning with a hoar-frost, the cold weather will soon come, and a hard winter.",
-  "skill": 0.0276,
-  "p": 0.721,
-  "n": 253
+  "skill": 0.0236,
+  "p": 0.687,
+  "n": 254
  },
  {
   "quote": "If it rains this day, it will rain the forty days after.",
   "skill": -0.0527,
-  "p": 0.671,
+  "p": 0.693,
   "n": 95
  },
  {
   "quote": "When September has been rainy, the following May is generally dry",
-  "skill": -0.0527,
-  "p": 0.713,
+  "skill": -0.0106,
+  "p": 1.0,
   "n": 95
  },
  {
   "quote": "When May is dry, the following September is apt to be wet",
   "skill": -0.0527,
-  "p": 0.699,
+  "p": 0.71,
   "n": 95
  },
  {
   "quote": "A wet September, drought for next summer",
-  "skill": -0.0527,
-  "p": 0.661,
-  "n": 95
+  "skill": 0.1489,
+  "p": 0.211,
+  "n": 94
  },
  {
   "quote": "If the storms in September clear off warm, all the storms of the following winter will be warm.",
-  "skill": 0.1937,
-  "p": 0.004,
-  "n": 253
+  "skill": 0.1339,
+  "p": 0.045,
+  "n": 254
  },
  {
   "quote": "When a cold spell occurs in September and passes without a frost, a frost will not occur until the same time in October.",
@@ -338,115 +338,121 @@
  {
   "quote": "Fair on September 1st, fair for the month.",
   "skill": 0.1999,
-  "p": 0.084,
+  "p": 0.051,
   "n": 95
  },
  {
   "quote": "If the hart and the hind meet dry and part dry on Rood Day fair, for sax weeks, of rain there'll be nae mail.",
   "skill": 0.1157,
-  "p": 0.314,
+  "p": 0.311,
   "n": 95
  },
  {
   "quote": "If it does not rain on St. Michael's and Gallus, a dry spring is indicated for the next year.",
-  "skill": 0.1578,
-  "p": 0.14,
+  "skill": 0.0315,
+  "p": 0.833,
   "n": 95
  },
  {
   "quote": "When it freezes and snows in October, January will bring mild weather.",
-  "skill": -0.1339,
-  "p": 0.045,
+  "skill": -0.1102,
+  "p": 0.097,
   "n": 254
  },
  {
   "quote": "If October bring heavy frosts and winds, then will January and February be mild.",
-  "skill": -0.1181,
-  "p": 0.07,
+  "skill": -0.1969,
+  "p": 0.008,
   "n": 254
  },
  {
   "quote": "Warm October, cold February.",
-  "skill": -0.1417,
-  "p": 0.024,
+  "skill": -0.1024,
+  "p": 0.123,
   "n": 254
  },
  {
   "quote": "October and November cold indicate that the following January and February will be mild and dry.",
-  "skill": -0.1496,
-  "p": 0.025,
+  "skill": -0.0866,
+  "p": 0.187,
   "n": 254
  },
  {
   "quote": "October and November cold indicate that the following January and February will be mild and dry.",
   "skill": 0.1578,
-  "p": 0.167,
+  "p": 0.156,
   "n": 95
  },
  {
   "quote": "If there's ice in November that will bear a duck. There'll be nothing after but sludge and muck.",
-  "skill": -0.1489,
-  "p": 0.185,
-  "n": 94
+  "skill": 0.0736,
+  "p": 0.54,
+  "n": 95
  },
  {
   "quote": "Ice in November brings mud in December.",
   "skill": -0.1791,
-  "p": 0.097,
+  "p": 0.116,
   "n": 95
  },
  {
   "quote": "If All Saints' Day will bring out the winter, St. Martin's Day will bring out Indian summer.",
   "skill": -0.1654,
-  "p": 0.012,
+  "p": 0.009,
   "n": 254
  },
  {
   "quote": "If this day (All Saints') be fair, the next winter will bring but little rain and snow along with it.",
-  "skill": -0.0213,
-  "p": 1.0,
-  "n": 94
+  "skill": 0.0315,
+  "p": 0.84,
+  "n": 95
  },
  {
   "quote": "If ducks do swim at Hollantide, At Christmas they will slide.",
   "skill": 0.1999,
-  "p": 0.051,
+  "p": 0.075,
   "n": 95
  },
  {
   "quote": "If the geese at Martin's Day stand on ice, they will walk in mud at Christmas.",
   "skill": -0.0741,
-  "p": 0.528,
+  "p": 0.548,
   "n": 95
  },
  {
   "quote": "As at Catherine foul or fair, so will be the next February.",
-  "skill": -0.137,
-  "p": 0.206,
+  "skill": 0.0315,
+  "p": 0.848,
   "n": 95
  },
  {
   "quote": "As at Catherine foul or fair, so will be the next February.",
-  "skill": -0.1791,
-  "p": 0.105,
+  "skill": -0.0106,
+  "p": 1.0,
   "n": 95
  },
  {
   "quote": "Frost on the shortest day is said to indicate a severe winter.",
-  "skill": 0.2016,
-  "p": 0.0,
-  "n": 253
+  "skill": 0.2126,
+  "p": 0.001,
+  "n": 254
  },
  {
   "quote": "If ice will bear a man before Christmas, it will not bear a mouse afterwards.",
   "skill": -0.2126,
-  "p": 0.003,
+  "p": 0.001,
   "n": 254
+ },
+ {
+  "quote": "If it rain much during the twelve days after Christmas, it will be a wet year.",
+  "skill": 0.234,
+  "p": 0.044,
+  "n": 94
  },
  {
   "quote": "As the equinoctial storms clear, so will all storms clear for the six months.",
   "skill": 0.0736,
-  "p": 0.545,
+  "p": 0.556,
   "n": 95
  }
 ]

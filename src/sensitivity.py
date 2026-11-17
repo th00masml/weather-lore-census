@@ -7,7 +7,7 @@ import os
 
 import numpy as np
 
-from evaluate import load_series, window_days, window_value, valid_rule, RAW, OUT, N_PERM, MIN_YEARS, FDR_Q
+from evaluate import load_series, window_days, window_value, valid_rule, out_year_offset, RAW, OUT, N_PERM, MIN_YEARS, FDR_Q
 
 
 def main():
@@ -46,7 +46,7 @@ def main():
         cvals, ovals = [], []
         for y in range(y0, yr_max):
             cv = window_value(series[r["cond"]["var"]], y, cd, cw, agg[r["cond"]["var"]])
-            ov = window_value(series[r["out"]["var"]], y, od2, ow, agg[r["out"]["var"]])
+            ov = window_value(series[r["out"]["var"]], y + out_year_offset(r), od2, ow, agg[r["out"]["var"]])  # next-year outcome, fixed 2026-11
             if cv is not None and ov is not None:
                 cvals.append(cv); ovals.append(ov)
         n = len(cvals)

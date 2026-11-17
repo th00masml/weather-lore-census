@@ -36,15 +36,14 @@ def window_days(start, end):
     e = dt.date(2001, int(end[:2]), int(end[3:]))
     days = []
     cur = s
+    # Fixed 2026-11: the loop used to stop on cur == e, which never happens for a
+    # window that crosses New Year (e lies in 2001, cur runs on into 2002), so
+    # such windows silently ran for a whole year. Compare (month, day) instead.
     while True:
         days.append((cur.month, cur.day))
-        if cur == e:
+        if (cur.month, cur.day) == (e.month, e.day) or len(days) >= 365:
             break
         cur += dt.timedelta(days=1)
-        if cur == s:  # full wrap safety
-            break
-        if len(days) > 366:
-            break
     return days, e < s  # wrapped?
 
 
@@ -62,6 +61,13 @@ def window_value(series, year, days, wrapped, agg):
     if len(vs) < max(1, int(0.8 * len(days))):
         return None
     return float(np.mean(vs)) if agg == "mean" else float(np.sum(vs))
+
+
+def out_year_offset(r):
+    """1 if the outcome window starts before the condition window in the calendar."""
+    cs = dt.date(2001, int(r["cond"]["start"][:2]), int(r["cond"]["start"][3:]))
+    os_ = dt.date(2001, int(r["out"]["start"][:2]), int(r["out"]["start"][3:]))
+    return 1 if os_ < cs else 0
 
 
 def valid_rule(r):
@@ -110,7 +116,11 @@ def main():
         cvals, ovals, years = [], [], []
         for y in range(y0, yr_max):
             cv = window_value(series[r["cond"]["var"]], y, cd, cw, agg[r["cond"]["var"]])
-            ov = window_value(series[r["out"]["var"]], y, od, ow, agg[r["out"]["var"]])
+            # Fixed 2026-11: an outcome window that starts earlier in the calendar than
+            # the condition window belongs to the NEXT year ("no snow before January,
+            # more in March"); it used to be read from the same year, i.e. before the
+            # condition.
+            ov = window_value(series[r["out"]["var"]], y + out_year_offset(r), od, ow, agg[r["out"]["var"]])
             if cv is not None and ov is not None:
                 cvals.append(cv); ovals.append(ov); years.append(y)
         n = len(years)

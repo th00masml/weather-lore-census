@@ -16,8 +16,8 @@
   "n_years": 95,
   "status": "ok",
   "p_cond": 0.49473684210526314,
-  "skill": -0.0527,
-  "p_value": 0.679,
+  "skill": 0.0315,
+  "p_value": 0.832,
   "fdr_significant": false
  },
  {
@@ -80,7 +80,7 @@
   "status": "ok",
   "p_cond": 0.49473684210526314,
   "skill": 0.1578,
-  "p_value": 0.134,
+  "p_value": 0.139,
   "fdr_significant": false
  },
  {
@@ -772,8 +772,8 @@
   "n_years": 254,
   "status": "ok",
   "p_cond": 0.5,
-  "skill": -0.0472,
-  "p_value": 0.522,
+  "skill": -0.0394,
+  "p_value": 0.617,
   "fdr_significant": false
  },
  {
@@ -919,9 +919,9 @@
   "n_years": 254,
   "status": "ok",
   "p_cond": 0.5,
-  "skill": -0.1654,
-  "p_value": 0.014,
-  "fdr_significant": true
+  "skill": -0.1102,
+  "p_value": 0.103,
+  "fdr_significant": false
  },
  {
   "quote": "If St. Swithin weep, that year, the proverb says, The weather will be foul for forty days.",
@@ -1000,11 +1000,11 @@
    "var": "temp",
    "dir": "below"
   },
-  "n_years": 253,
+  "n_years": 254,
   "status": "ok",
-  "p_cond": 0.4980237154150198,
-  "skill": -0.1384,
-  "p_value": 0.037,
+  "p_cond": 0.5,
+  "skill": -0.0394,
+  "p_value": 0.605,
   "fdr_significant": false
  },
  {
@@ -1025,7 +1025,7 @@
   "status": "ok",
   "p_cond": 0.49473684210526314,
   "skill": -0.137,
-  "p_value": 0.211,
+  "p_value": 0.233,
   "fdr_significant": false
  },
  {
@@ -1042,11 +1042,11 @@
    "var": "temp",
    "dir": "below"
   },
-  "n_years": 253,
+  "n_years": 254,
   "status": "ok",
-  "p_cond": 0.48616600790513836,
-  "skill": 0.0276,
-  "p_value": 0.718,
+  "p_cond": 0.484251968503937,
+  "skill": 0.0236,
+  "p_value": 0.687,
   "fdr_significant": false
  },
  {
@@ -1067,7 +1067,7 @@
   "status": "ok",
   "p_cond": 0.49473684210526314,
   "skill": -0.0527,
-  "p_value": 0.671,
+  "p_value": 0.693,
   "fdr_significant": false
  },
  {
@@ -1087,8 +1087,8 @@
   "n_years": 95,
   "status": "ok",
   "p_cond": 0.49473684210526314,
-  "skill": -0.0527,
-  "p_value": 0.713,
+  "skill": -0.0106,
+  "p_value": 1.0,
   "fdr_significant": false
  },
  {
@@ -1109,7 +1109,7 @@
   "status": "ok",
   "p_cond": 0.49473684210526314,
   "skill": -0.0527,
-  "p_value": 0.699,
+  "p_value": 0.71,
   "fdr_significant": false
  },
  {
@@ -1126,11 +1126,11 @@
    "var": "precip",
    "dir": "below"
   },
-  "n_years": 95,
+  "n_years": 94,
   "status": "ok",
-  "p_cond": 0.49473684210526314,
-  "skill": -0.0527,
-  "p_value": 0.661,
+  "p_cond": 0.5,
+  "skill": 0.1489,
+  "p_value": 0.211,
   "fdr_significant": false
  },
  {
@@ -1147,12 +1147,12 @@
    "var": "temp",
    "dir": "above"
   },
-  "n_years": 253,
+  "n_years": 254,
   "status": "ok",
-  "p_cond": 0.4980237154150198,
-  "skill": 0.1779,
-  "p_value": 0.003,
-  "fdr_significant": true
+  "p_cond": 0.5,
+  "skill": 0.1339,
+  "p_value": 0.045,
+  "fdr_significant": false
  },
  {
   "quote": "When a cold spell occurs in September and passes without a frost, a frost will not occur until the same time in October.",
@@ -1193,7 +1193,7 @@
   "status": "ok",
   "p_cond": 0.49473684210526314,
   "skill": 0.1999,
-  "p_value": 0.08,
+  "p_value": 0.056,
   "fdr_significant": false
  },
  {
@@ -1214,7 +1214,7 @@
   "status": "ok",
   "p_cond": 0.49473684210526314,
   "skill": 0.1157,
-  "p_value": 0.309,
+  "p_value": 0.313,
   "fdr_significant": false
  },
  {
@@ -1234,8 +1234,8 @@
   "n_years": 95,
   "status": "ok",
   "p_cond": 0.49473684210526314,
-  "skill": 0.1578,
-  "p_value": 0.14,
+  "skill": 0.0315,
+  "p_value": 0.833,
   "fdr_significant": false
  },
  {
@@ -1255,8 +1255,8 @@
   "n_years": 254,
   "status": "ok",
   "p_cond": 0.5,
-  "skill": -0.1339,
-  "p_value": 0.045,
+  "skill": -0.1102,
+  "p_value": 0.097,
   "fdr_significant": false
  },
  {
@@ -1276,9 +1276,9 @@
   "n_years": 254,
   "status": "ok",
   "p_cond": 0.5,
-  "skill": -0.1181,
-  "p_value": 0.07,
-  "fdr_significant": false
+  "skill": -0.1969,
+  "p_value": 0.008,
+  "fdr_significant": true
  },
  {
   "quote": "Warm October, cold February.",
@@ -1297,8 +1297,8 @@
   "n_years": 254,
   "status": "ok",
   "p_cond": 0.5,
-  "skill": -0.1417,
-  "p_value": 0.024,
+  "skill": -0.1024,
+  "p_value": 0.123,
   "fdr_significant": false
  },
  {
@@ -1318,8 +1318,8 @@
   "n_years": 254,
   "status": "ok",
   "p_cond": 0.5,
-  "skill": -0.1496,
-  "p_value": 0.025,
+  "skill": -0.0866,
+  "p_value": 0.187,
   "fdr_significant": false
  },
  {
@@ -1340,7 +1340,7 @@
   "status": "ok",
   "p_cond": 0.49473684210526314,
   "skill": 0.1578,
-  "p_value": 0.167,
+  "p_value": 0.156,
   "fdr_significant": false
  },
  {
@@ -1357,11 +1357,11 @@
    "var": "precip",
    "dir": "above"
   },
-  "n_years": 94,
+  "n_years": 95,
   "status": "ok",
-  "p_cond": 0.5,
-  "skill": -0.0638,
-  "p_value": 0.635,
+  "p_cond": 0.49473684210526314,
+  "skill": 0.0736,
+  "p_value": 0.54,
   "fdr_significant": false
  },
  {
@@ -1382,7 +1382,7 @@
   "status": "ok",
   "p_cond": 0.49473684210526314,
   "skill": -0.1791,
-  "p_value": 0.097,
+  "p_value": 0.116,
   "fdr_significant": false
  },
  {
@@ -1403,7 +1403,7 @@
   "status": "ok",
   "p_cond": 0.5,
   "skill": -0.1654,
-  "p_value": 0.012,
+  "p_value": 0.009,
   "fdr_significant": true
  },
  {
@@ -1420,11 +1420,11 @@
    "var": "precip",
    "dir": "below"
   },
-  "n_years": 94,
+  "n_years": 95,
   "status": "ok",
-  "p_cond": 0.5,
-  "skill": -0.0213,
-  "p_value": 1.0,
+  "p_cond": 0.49473684210526314,
+  "skill": 0.0315,
+  "p_value": 0.84,
   "fdr_significant": false
  },
  {
@@ -1445,7 +1445,7 @@
   "status": "ok",
   "p_cond": 0.49473684210526314,
   "skill": 0.1999,
-  "p_value": 0.051,
+  "p_value": 0.075,
   "fdr_significant": false
  },
  {
@@ -1466,7 +1466,7 @@
   "status": "ok",
   "p_cond": 0.4842105263157895,
   "skill": -0.0741,
-  "p_value": 0.528,
+  "p_value": 0.548,
   "fdr_significant": false
  },
  {
@@ -1486,8 +1486,8 @@
   "n_years": 95,
   "status": "ok",
   "p_cond": 0.49473684210526314,
-  "skill": -0.137,
-  "p_value": 0.206,
+  "skill": 0.0315,
+  "p_value": 0.848,
   "fdr_significant": false
  },
  {
@@ -1507,8 +1507,8 @@
   "n_years": 95,
   "status": "ok",
   "p_cond": 0.49473684210526314,
-  "skill": -0.1791,
-  "p_value": 0.105,
+  "skill": -0.0106,
+  "p_value": 1.0,
   "fdr_significant": false
  },
  {
@@ -1525,11 +1525,11 @@
    "var": "temp",
    "dir": "below"
   },
-  "n_years": 253,
+  "n_years": 254,
   "status": "ok",
-  "p_cond": 0.49407114624505927,
-  "skill": 0.2016,
-  "p_value": 0.0,
+  "p_cond": 0.5,
+  "skill": 0.2126,
+  "p_value": 0.001,
   "fdr_significant": true
  },
  {
@@ -1550,7 +1550,7 @@
   "status": "ok",
   "p_cond": 0.5,
   "skill": -0.2126,
-  "p_value": 0.003,
+  "p_value": 0.001,
   "fdr_significant": true
  },
  {
@@ -1570,8 +1570,8 @@
   "n_years": 94,
   "status": "ok",
   "p_cond": 0.5,
-  "skill": 0.1064,
-  "p_value": 0.42,
+  "skill": 0.2766,
+  "p_value": 0.016,
   "fdr_significant": false
  },
  {
@@ -1592,7 +1592,7 @@
   "status": "ok",
   "p_cond": 0.49473684210526314,
   "skill": 0.1578,
-  "p_value": 0.148,
+  "p_value": 0.169,
   "fdr_significant": false
  }
 ]
