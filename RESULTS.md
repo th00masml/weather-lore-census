@@ -1,15 +1,34 @@
 # Results — the Weather Lore Census
 
-Run date: 2026-08-10. Extraction model: `claude-sonnet-5` (authenticated
-CLI, no API key), used ONLY as a parser. Evaluation: deterministic, no
-model. Everything recomputes from cached `outputs/`.
+Run date: 2026-08-10 (extraction); evaluation corrected and extended
+2026-11. Extraction model: `claude-sonnet-5` (authenticated CLI, no API
+key), used ONLY as a parser. Evaluation: deterministic, no model.
+Everything recomputes from cached `outputs/`.
 
-## Verdict: BUILT
+## Verdict (revised 2026-11)
 
-Both preregistered gates passed, and the census finds real, FDR-surviving
-forecasting skill in a subset of Victorian weather proverbs — alongside a
-clean quantitative refutation of another subset. Inwards' 1898 corpus has
-its "test of experience", 128 years late.
+The instrument works: both preregistered gates passed (below). The census
+result needs a narrower reading than the August write-up gave it.
+
+- **Two evaluator bugs were found and fixed** (details below). Corrected,
+  **10 of 76 rules** are FDR-significant (was 11).
+- **Every significant rule is persistence restated.** All ten use the same
+  variable on both sides, so the proverb's condition *is* the trivial
+  "the anomaly carries on" predictor; their skill equals its skill
+  exactly. None of the 15 rules that predict one variable from another
+  adds skill beyond persistence after FDR.
+- **The folk calendar picked no better dates than chance.** Against 200
+  random rules per proverb with the same variables, window lengths and
+  lag (detrended), the proverbs' mean |skill| is 0.099 against 0.097, and
+  2 of 76 rules beat the random 95th percentile where 3.8 are expected.
+- Removing the CET warming trend (31-year running mean) leaves **7**
+  significant rules; the secular trend inflated three.
+
+So: proverbs that say "cold now, cold for a while" are true because
+English weather persists; proverbs that promise a reversal are refuted with
+the opposite sign for the same reason; long-range seasonal prophecies show
+no skill. That is a census of what the lore encodes, not evidence that
+Victorian observers knew anything a persistence forecast does not.
 
 ## Gate 1 — Yield (preregistered: >= 50)
 
@@ -26,66 +45,71 @@ and "sunbeam on Bridget's day -> snow before May") use the preregistered
 coarse mappings (frost/snow -> temp-below, clear -> precip-below) and were
 counted as loose, not wrong. PASS.
 
-## The census (primary, as preregistered)
+## Corrections to the evaluator (2026-11)
+
+Found while building the persistence baseline, whose independent
+array-based evaluator disagreed with `census.json` by up to 0.20 in skill.
+
+1. **Windows crossing New Year ran for a whole year.** `window_days`
+   stopped when the stepped date equalled the end date, which never happens
+   for a window such as Dec 1 – Feb 28 (the end lies in the reference year,
+   the stepped date runs into the next). Such windows silently became
+   367-day windows. Fixed by comparing month and day.
+2. **Outcomes earlier in the calendar than the condition were read from the
+   same year**, i.e. before the condition ("no snow before January, more in
+   March and April" was tested against the preceding March). 14 of 76
+   rules. Fixed: the outcome is read from the following year.
+
+After the fix the independent evaluator in `src/baselines.py` reproduces
+every census skill to within 5e-5. `tests/test_evaluate.py` pins both
+fixes. The August numbers (11 significant, sensitivity 9) are superseded.
+
+## Population: 92 -> 76
+
+92 rules were extracted; all 92 pass validation, none has an identical
+condition and outcome, and 16 are duplicates of another rule on
+(condition, outcome). The FDR family is the 76 distinct rules.
+
+## The census (primary analysis as preregistered, evaluator corrected)
 
 76 rules, each tested on up to 254 years of daily Central England
-Temperature (1772-2025) and 94 years of daily England-Wales precipitation
+Temperature (1772-2025) and 95 years of daily England-Wales precipitation
 (1931-2025). Skill = P(outcome|condition) − P(outcome|¬condition), median
 splits, 1000-permutation two-sided p, Benjamini-Hochberg FDR q < 0.10.
 
-- **11 of 76 rules FDR-significant** (expected false discoveries if all
-  were null: ~1.1). Mean |skill| across all rules: 0.123.
-- Sensitivity analysis (post-hoc, disclosed): trimming outcome windows of
-  any day inside the condition window (removing self-inclusion
-  autocorrelation) leaves **9 FDR-significant** (expected ~0.9). The
-  signal is not an overlap artifact.
+- **10 of 76 rules FDR-significant** (expected false discoveries if all
+  were null: ~1.0). Mean |skill| across all rules: 0.117.
+- Sensitivity (post hoc): trimming outcome windows of any day inside the
+  condition window leaves **8** significant (expected ~0.8).
 
-Full tables: `outputs/census.json` (primary), `outputs/census_trimmed.json`
-(sensitivity). Reproduce:
+Full tables: `outputs/census.json`, `outputs/census_trimmed.json`.
 
-```
-cd src
-python extract.py && python audit.py
-python evaluate.py && python sensitivity.py
-```
+## Reference points (post hoc, 2026-11): `src/baselines.py`
 
-## What the Victorians got right — and exactly wrong
+For each rule: year-bootstrap 95% CI of skill; skill on CET from 1878 only
+(earlier CET rests on fewer, less homogeneous stations); skill after
+removing a 31-year running mean (trend); skill of the persistence rule;
+skill given persistence (stratified permutation, only defined when the
+two sides use different variables); and the |skill| percentile among 200
+random rules of the same shape. Output: `outputs/baselines.json`.
 
-The FDR-surviving rules tell one coherent story: **English winter weather
-persists, and the lore that encoded persistence is true, while the lore
-that promised reversal is refuted — with the opposite sign.**
+| proverb (abridged) | skill [95% CI] | 1878+ | detrended | persistence | pct. among random |
+|---|---|---|---|---|---|
+| Thunderstorms early August -> rain follows (precip) | +0.41 [+0.22, +0.60] | +0.41 | +0.45* | +0.45 | 0.63 |
+| St. Matthias breaks the ice; if none, he will make it | −0.30 [−0.41, −0.18] | −0.30 | −0.34* | +0.34 | 0.84 |
+| Freezes on St. Matthias' Day -> freezes for a month | +0.30 [+0.20, +0.42] | +0.30 | +0.34* | +0.34 | 0.88 |
+| Cold at St. Peter's Day -> it will last longer | +0.28 [+0.14, +0.40] | +0.28 | +0.31* | +0.31 | 0.88 |
+| Frost on the shortest day -> severe winter | +0.21 [+0.09, +0.33] | +0.19 | +0.18* | +0.18 | 0.67 |
+| Ice bears a man before Christmas -> not a mouse after | −0.21 [−0.34, −0.08] | −0.05 | −0.15 | +0.15 | 0.39 |
+| Cold spell in September without frost -> ... | +0.20 [+0.07, +0.32] | +0.14 | +0.02 | +0.02 | 0.03 |
+| Heavy frosts in October -> January ... | −0.20 [−0.32, −0.07] | −0.05 | +0.06 | −0.06 | 0.40 |
+| So many frosts in March, so many in May | +0.17 [+0.04, +0.28] | +0.14 | +0.07 | +0.07 | 0.48 |
+| All Saints' winter -> St. Martin's summer | −0.17 [−0.29, −0.04] | −0.16 | −0.15 | +0.15 | 0.78 |
 
-Confirmed (positive skill, trimmed analysis, n = years):
-
-| proverb | skill | p | n |
-|---|---|---|---|
-| "If it freezes on St. Matthias' Day (Feb 24), it will freeze for a month together" | +0.28 | <0.001 | 254 |
-| "If cold at St. Peter's Day (Feb 22), it will last longer (forty days)" | +0.26 | <0.001 | 254 |
-| "If St. Vitus's Day (Jun 15) be rainy, it will rain thirty days together" | +0.26 | 0.020 | 95 |
-| "Frost on the shortest day indicates a severe winter" | +0.20 | <0.001 | 253 |
-
-Refuted with opposite sign (the data shows persistence where the proverb
-promised reversal):
-
-| proverb | skill | p | n |
-|---|---|---|---|
-| "St. Matthias breaks the ice; if he finds none, he will make it" | **−0.28** | <0.001 | 254 |
-| "If ice will bear a man before Christmas, it will not bear a mouse after" | **−0.21** | 0.003 | 254 |
-
-A cold late-February day genuinely predicts a cold month (254 years of
-data); a mild one predicts a mild month — the "he will make it" reversal
-is anti-true. Most of the corpus (65/76 rules), including nearly all
-long-range seasonal prophecies ("wet September, drought next summer",
-"warm October, cold February"), shows no detectable skill: quantified
-refutation at corpus scale, for the first time.
-
-## Why the instrument mattered
-
-The LLM did what no one had done since 1898: converted an archaic verse
-corpus into 76 precise, dated, machine-testable forecasting rules in ~25
-minutes. The judging was done entirely by 253 years of instrument data.
-Memorization is structurally irrelevant: the model never saw a weather
-number, and its beliefs cannot alter what HadCET says.
+\* FDR-significant after detrending. Rows: the 10 census-significant rules.
+Persistence = skill of "the outcome variable keeps its condition-window
+anomaly"; for same-variable rules the detrended skill equals it (or its
+negative, when the proverb predicts a reversal) by construction.
 
 ## Limits
 
@@ -93,10 +117,15 @@ number, and its beliefs cannot alter what HadCET says.
   is untestable against these two variables and was excluded by design.
 - Coarse mappings (fine->dry, frost->cold) flatten some nuances.
 - Precipitation rules see only 94 years (1931-); temp rules see 253.
-- The persistence findings are consistent with known midlatitude weather
-  autocorrelation — the novelty is showing *which specific proverbs*
-  encode it, and which claim the opposite of reality, corpus-wide with
-  FDR control.
+- Every significant rule is a persistence rule (see Reference points), so
+  the census measures which proverbs restate persistence and which deny
+  it; it does not show skill beyond a persistence forecast.
+- The 25-rule fidelity audit had one rater (the author); no second rater
+  and no kappa. A second, independent rating is the main open item.
+- The extraction depends on a closed model (`claude-sonnet-5`, CLI, no
+  temperature control, one run); `outputs/extracted.jsonl` and
+  `outputs/chunks.json` cache its exact output, and `src/extract.py` holds
+  the prompt.
 
 ## What would extend it
 
