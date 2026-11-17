@@ -1,0 +1,2913 @@
+{
+ "summary": {
+  "n_rules": 76,
+  "fdr_census_recomputed": 12,
+  "fdr_detrended": 7,
+  "rules_condition_is_persistence": 61,
+  "rules_with_other_variable": 15,
+  "fdr_given_persistence_other_variable": 0,
+  "census_vs_recomputed_max_abs_diff": 4.960629921255122e-05,
+  "rules_above_random_p95_expected_by_chance": 3.8000000000000003,
+  "mean_abs_skill_detrended": 0.09888104255025232,
+  "mean_abs_skill_random_rules_median": 0.0965018366090297,
+  "rules_above_random_p95": 2,
+  "settings": {
+   "n_boot_years": 1000,
+   "n_perm": 2000,
+   "n_random": 200,
+   "trend_window_years": 31,
+   "fdr_q": 0.1,
+   "seed": 0
+  }
+ },
+ "rules": [
+  {
+   "quote": "If there is no snow before January, there will be the more in March and April.",
+   "cond": {
+    "start": "12-01",
+    "end": "12-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "03-01",
+    "end": "04-30",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.0315,
+   "census_fdr": false,
+   "skill": 0.0314716312056737,
+   "p": 0.827,
+   "skill_ci95_years_bootstrap": [
+    -0.17049418604651165,
+    0.21601073345259397
+   ],
+   "skill_1878_onwards": 0.0314716312056737,
+   "skill_detrended": 0.0314716312056737,
+   "p_detrended": 0.838,
+   "persistence_skill": -0.05274822695035464,
+   "persistence_p": 0.682,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.155,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "March in Janiveer, Janiveer in March, I fear.",
+   "cond": {
+    "start": "01-01",
+    "end": "01-31",
+    "var": "temp",
+    "dir": "above"
+   },
+   "out": {
+    "start": "03-01",
+    "end": "03-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": -0.1496,
+   "census_fdr": false,
+   "skill": -0.14960629921259838,
+   "p": 0.0285,
+   "skill_ci95_years_bootstrap": [
+    -0.27386344762826187,
+    -0.030520685152977758
+   ],
+   "skill_1878_onwards": -0.21621621621621623,
+   "skill_detrended": -0.10236220472440949,
+   "p_detrended": 0.1355,
+   "persistence_skill": 0.10236220472440949,
+   "persistence_p": 0.13,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.0708661417322835,
+   "random_rules_abs_skill_p95": 0.1661417322834643,
+   "percentile_among_random": 0.66,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "A warm January, a cold May.",
+   "cond": {
+    "start": "01-01",
+    "end": "01-31",
+    "var": "temp",
+    "dir": "above"
+   },
+   "out": {
+    "start": "05-01",
+    "end": "05-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": -0.0551,
+   "census_fdr": false,
+   "skill": -0.05511811023622043,
+   "p": 0.434,
+   "skill_ci95_years_bootstrap": [
+    -0.18079361751722947,
+    0.07116738817869356
+   ],
+   "skill_1878_onwards": -0.027027027027026973,
+   "skill_detrended": 0.023622047244094446,
+   "p_detrended": 0.8015,
+   "persistence_skill": -0.023622047244094446,
+   "persistence_p": 0.795,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.0708661417322835,
+   "random_rules_abs_skill_p95": 0.14960629921259838,
+   "percentile_among_random": 0.055,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If St. Paul's Day be fine, the year will be the same.",
+   "cond": {
+    "start": "01-25",
+    "end": "01-25",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "01-25",
+    "end": "01-24",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.1578,
+   "census_fdr": false,
+   "skill": 0.15780141843971635,
+   "p": 0.1345,
+   "skill_ci95_years_bootstrap": [
+    -0.02297366621067037,
+    0.35873440285204994
+   ],
+   "skill_1878_onwards": 0.15780141843971635,
+   "skill_detrended": -0.010638297872340441,
+   "p_detrended": 1.0,
+   "persistence_skill": -0.010638297872340441,
+   "persistence_p": 1.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.06382978723404253,
+   "random_rules_abs_skill_p95": 0.23404255319148937,
+   "percentile_among_random": 0.0,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "February fill dyke; March lick it out.",
+   "cond": {
+    "start": "02-01",
+    "end": "02-28",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "03-01",
+    "end": "03-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.0736,
+   "census_fdr": false,
+   "skill": 0.07358156028368795,
+   "p": 0.5555,
+   "skill_ci95_years_bootstrap": [
+    -0.11864478681695664,
+    0.2637977947068958
+   ],
+   "skill_1878_onwards": 0.07358156028368795,
+   "skill_detrended": 0.0314716312056737,
+   "p_detrended": 0.8475,
+   "persistence_skill": -0.010638297872340441,
+   "persistence_p": 1.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.2211879432624113,
+   "percentile_among_random": 0.185,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If February give much snow, a fine summer it doth foreshow.",
+   "cond": {
+    "start": "02-01",
+    "end": "02-28",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "06-01",
+    "end": "08-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.1999,
+   "census_fdr": false,
+   "skill": 0.1999113475177305,
+   "p": 0.0605,
+   "skill_ci95_years_bootstrap": [
+    -0.006695951107715841,
+    0.38928812056737583
+   ],
+   "skill_1878_onwards": 0.1999113475177305,
+   "skill_detrended": 0.1999113475177305,
+   "p_detrended": 0.0665,
+   "persistence_skill": -0.05274822695035464,
+   "persistence_p": 0.648,
+   "skill_given_persistence": 0.2135756056808689,
+   "p_given_persistence": 0.043,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.05274822695035464,
+   "random_rules_abs_skill_p95": 0.13696808510638298,
+   "percentile_among_random": 0.97,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "Whenever the latter part of February and beginning of March are dry, there will be a deficiency of rain up to Midsummer Day.",
+   "cond": {
+    "start": "02-15",
+    "end": "03-10",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "03-10",
+    "end": "06-24",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.1157,
+   "census_fdr": false,
+   "skill": 0.11569148936170215,
+   "p": 0.3165,
+   "skill_ci95_years_bootstrap": [
+    -0.0871662737788498,
+    0.30908591731266144
+   ],
+   "skill_1878_onwards": 0.11569148936170215,
+   "skill_detrended": -0.05274822695035464,
+   "p_detrended": 0.7015,
+   "persistence_skill": -0.05274822695035464,
+   "persistence_p": 0.6675,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.09485815602836878,
+   "random_rules_abs_skill_p95": 0.1999113475177305,
+   "percentile_among_random": 0.2,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "For every thunder with rain in February there will be a cold spell in May.",
+   "cond": {
+    "start": "02-01",
+    "end": "02-28",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "05-01",
+    "end": "05-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.0315,
+   "census_fdr": false,
+   "skill": 0.0314716312056737,
+   "p": 0.8525,
+   "skill_ci95_years_bootstrap": [
+    -0.17755417079003796,
+    0.2411712715389185
+   ],
+   "skill_1878_onwards": 0.0314716312056737,
+   "skill_detrended": 0.07358156028368795,
+   "p_detrended": 0.529,
+   "persistence_skill": 0.11569148936170215,
+   "persistence_p": 0.3175,
+   "skill_given_persistence": 0.09053188526872742,
+   "p_given_persistence": 0.4095,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.05274822695035464,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.505,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "As long as the sunbeam comes in on Bridget's feast-day, the snow comes before May Day.",
+   "cond": {
+    "start": "02-01",
+    "end": "02-01",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "02-01",
+    "end": "05-01",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.0736,
+   "census_fdr": false,
+   "skill": 0.07358156028368795,
+   "p": 0.5565,
+   "skill_ci95_years_bootstrap": [
+    -0.13415478543195936,
+    0.2666733511586452
+   ],
+   "skill_1878_onwards": 0.07358156028368795,
+   "skill_detrended": 0.07358156028368795,
+   "p_detrended": 0.5345,
+   "persistence_skill": 0.326241134751773,
+   "persistence_p": 0.0025,
+   "skill_given_persistence": 0.022681704260651577,
+   "p_given_persistence": 0.773,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.09485815602836878,
+   "random_rules_abs_skill_p95": 0.22222960992907762,
+   "percentile_among_random": 0.33,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "If Marie's purifying dale be cleare and bright with sunnie raie, then frost and cold shall be much more after the feast.",
+   "cond": {
+    "start": "02-02",
+    "end": "02-02",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "02-03",
+    "end": "03-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.0527,
+   "census_fdr": false,
+   "skill": -0.05274822695035464,
+   "p": 0.676,
+   "skill_ci95_years_bootstrap": [
+    -0.25358774262673034,
+    0.1512161629979687
+   ],
+   "skill_1878_onwards": -0.05274822695035464,
+   "skill_detrended": -0.09485815602836878,
+   "p_detrended": 0.4045,
+   "persistence_skill": 0.326241134751773,
+   "persistence_p": 0.0015,
+   "skill_given_persistence": -0.1052517162471396,
+   "p_given_persistence": 0.337,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.09485815602836878,
+   "random_rules_abs_skill_p95": 0.24308510638297837,
+   "percentile_among_random": 0.44,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "As far as the sun shines in on Candlemas Day, So far will the snow blow in afore old May.",
+   "cond": {
+    "start": "02-02",
+    "end": "02-02",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "02-02",
+    "end": "05-13",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.137,
+   "census_fdr": false,
+   "skill": -0.13696808510638298,
+   "p": 0.2245,
+   "skill_ci95_years_bootstrap": [
+    -0.3266666666666666,
+    0.05278147163120567
+   ],
+   "skill_1878_onwards": -0.13696808510638298,
+   "skill_detrended": -0.05274822695035464,
+   "p_detrended": 0.7005,
+   "persistence_skill": 0.326241134751773,
+   "persistence_p": 0.003,
+   "skill_given_persistence": -0.0630732265446224,
+   "p_given_persistence": 0.6265,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.22222960992907762,
+   "percentile_among_random": 0.325,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "Should the sun shine out at the Purification, there will be more ice after the festival than there was before it.",
+   "cond": {
+    "start": "02-02",
+    "end": "02-02",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "02-02",
+    "end": "03-25",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.0527,
+   "census_fdr": false,
+   "skill": -0.05274822695035464,
+   "p": 0.6625,
+   "skill_ci95_years_bootstrap": [
+    -0.25965823897909684,
+    0.15578804050203732
+   ],
+   "skill_1878_onwards": -0.05274822695035464,
+   "skill_detrended": -0.13696808510638298,
+   "p_detrended": 0.2255,
+   "persistence_skill": 0.326241134751773,
+   "persistence_p": 0.003,
+   "skill_given_persistence": -0.14743020594965675,
+   "p_given_persistence": 0.1625,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.11569148936170215,
+   "random_rules_abs_skill_p95": 0.2211879432624113,
+   "percentile_among_random": 0.61,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "If Candlemas Day bring clouds and rain, Winter is gone and won't come again.",
+   "cond": {
+    "start": "02-02",
+    "end": "02-02",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "02-02",
+    "end": "03-25",
+    "var": "temp",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.0949,
+   "census_fdr": false,
+   "skill": -0.09485815602836878,
+   "p": 0.424,
+   "skill_ci95_years_bootstrap": [
+    -0.30223099674652476,
+    0.0973496809791109
+   ],
+   "skill_1878_onwards": -0.09485815602836878,
+   "skill_detrended": -0.13696808510638298,
+   "p_detrended": 0.2225,
+   "persistence_skill": 0.326241134751773,
+   "persistence_p": 0.0015,
+   "skill_given_persistence": -0.16177695988222301,
+   "p_given_persistence": 0.1155,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.10527482269503546,
+   "random_rules_abs_skill_p95": 0.2632978723404255,
+   "percentile_among_random": 0.595,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "If a storm on February 2nd, spring is near.",
+   "cond": {
+    "start": "02-02",
+    "end": "02-02",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "02-02",
+    "end": "03-01",
+    "var": "temp",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.0527,
+   "census_fdr": false,
+   "skill": -0.05274822695035464,
+   "p": 0.6875,
+   "skill_ci95_years_bootstrap": [
+    -0.2416001773049646,
+    0.15574050766551678
+   ],
+   "skill_1878_onwards": -0.05274822695035464,
+   "skill_detrended": -0.13696808510638298,
+   "p_detrended": 0.2315,
+   "persistence_skill": 0.326241134751773,
+   "persistence_p": 0.0025,
+   "skill_given_persistence": -0.16177695988222301,
+   "p_given_persistence": 0.116,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.09485815602836878,
+   "random_rules_abs_skill_p95": 0.2841312056737589,
+   "percentile_among_random": 0.625,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "If that day be bright and clear, the spring will be late.",
+   "cond": {
+    "start": "02-02",
+    "end": "02-02",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "02-02",
+    "end": "04-01",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.0106,
+   "census_fdr": false,
+   "skill": -0.010638297872340441,
+   "p": 1.0,
+   "skill_ci95_years_bootstrap": [
+    -0.20403711945506592,
+    0.1897730141897692
+   ],
+   "skill_1878_onwards": -0.010638297872340441,
+   "skill_detrended": -0.05274822695035464,
+   "p_detrended": 0.694,
+   "persistence_skill": 0.3683510638297872,
+   "persistence_p": 0.0,
+   "skill_given_persistence": -0.06442715484363082,
+   "p_given_persistence": 0.4705,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.09485815602836878,
+   "random_rules_abs_skill_p95": 0.24202127659574468,
+   "percentile_among_random": 0.25,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "When drops hang on the fence on February 2nd, icicles will hang thereon March 25th.",
+   "cond": {
+    "start": "02-02",
+    "end": "02-02",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "03-25",
+    "end": "03-25",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.074,
+   "census_fdr": false,
+   "skill": -0.07402482269503552,
+   "p": 0.535,
+   "skill_ci95_years_bootstrap": [
+    -0.26821846513919684,
+    0.1366650973525395
+   ],
+   "skill_1878_onwards": -0.07402482269503552,
+   "skill_detrended": 0.07358156028368795,
+   "p_detrended": 0.5375,
+   "persistence_skill": 0.07358156028368795,
+   "persistence_p": 0.5515,
+   "skill_given_persistence": 0.0778165175785313,
+   "p_given_persistence": 0.438,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.1999113475177305,
+   "percentile_among_random": 0.445,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "If the eighteen last days of February be wet, and the first ten of March, the spring quarter and summer too will prove too wet.",
+   "cond": {
+    "start": "02-11",
+    "end": "03-10",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "03-25",
+    "end": "09-29",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.0106,
+   "census_fdr": false,
+   "skill": -0.010638297872340441,
+   "p": 1.0,
+   "skill_ci95_years_bootstrap": [
+    -0.2250122620410068,
+    0.18226381461675578
+   ],
+   "skill_1878_onwards": -0.010638297872340441,
+   "skill_detrended": -0.05274822695035464,
+   "p_detrended": 0.684,
+   "persistence_skill": -0.05274822695035464,
+   "persistence_p": 0.701,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.05274822695035464,
+   "random_rules_abs_skill_p95": 0.1999113475177305,
+   "percentile_among_random": 0.355,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If cold at St. Peter's Day, it will last longer (shows weather for next forty days).",
+   "cond": {
+    "start": "02-22",
+    "end": "02-22",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "02-22",
+    "end": "04-03",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": 0.2757,
+   "census_fdr": true,
+   "skill": 0.2756589147286822,
+   "p": 0.0,
+   "skill_ci95_years_bootstrap": [
+    0.1427894358252421,
+    0.40105435563468267
+   ],
+   "skill_1878_onwards": 0.2838356164383562,
+   "skill_detrended": 0.3070866141732283,
+   "p_detrended": 0.0,
+   "persistence_skill": 0.3070866141732283,
+   "persistence_p": 0.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.2125984251968504,
+   "random_rules_abs_skill_p95": 0.32322937171916,
+   "percentile_among_random": 0.875,
+   "fdr": true,
+   "fdr_detrended": true,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If it freezes on St. Matthias' Day, it will freeze for a month together.",
+   "cond": {
+    "start": "02-24",
+    "end": "02-24",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "02-24",
+    "end": "03-24",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": 0.2992,
+   "census_fdr": true,
+   "skill": 0.2992311507936508,
+   "p": 0.0,
+   "skill_ci95_years_bootstrap": [
+    0.19567467254886958,
+    0.42291895841981453
+   ],
+   "skill_1878_onwards": 0.2972972972972973,
+   "skill_detrended": 0.33858267716535434,
+   "p_detrended": 0.0,
+   "persistence_skill": 0.33858267716535434,
+   "persistence_p": 0.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.2440944881889764,
+   "random_rules_abs_skill_p95": 0.35511811023622025,
+   "percentile_among_random": 0.875,
+   "fdr": true,
+   "fdr_detrended": true,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "St. Matthias breaks the ice; if he finds none, he will make it.",
+   "cond": {
+    "start": "02-24",
+    "end": "02-24",
+    "var": "temp",
+    "dir": "above"
+   },
+   "out": {
+    "start": "02-24",
+    "end": "03-24",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": -0.2994,
+   "census_fdr": true,
+   "skill": -0.29937965260545907,
+   "p": 0.0,
+   "skill_ci95_years_bootstrap": [
+    -0.40990031765460155,
+    -0.182148350982835
+   ],
+   "skill_1878_onwards": -0.2972972972972973,
+   "skill_detrended": -0.33858267716535434,
+   "p_detrended": 0.0,
+   "persistence_skill": 0.33858267716535434,
+   "persistence_p": 0.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.2440944881889764,
+   "random_rules_abs_skill_p95": 0.3700787401574803,
+   "percentile_among_random": 0.845,
+   "fdr": true,
+   "fdr_detrended": true,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "March comes in like a lion and goes out like a lamb.",
+   "cond": {
+    "start": "03-01",
+    "end": "03-10",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "03-21",
+    "end": "03-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.0527,
+   "census_fdr": false,
+   "skill": -0.05274822695035464,
+   "p": 0.6715,
+   "skill_ci95_years_bootstrap": [
+    -0.24549738271026214,
+    0.157368646572104
+   ],
+   "skill_1878_onwards": -0.05274822695035464,
+   "skill_detrended": -0.05274822695035464,
+   "p_detrended": 0.686,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.8165,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.265,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "March comes in like a lamb and goes out like a lion.",
+   "cond": {
+    "start": "03-01",
+    "end": "03-10",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "03-21",
+    "end": "03-31",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.0949,
+   "census_fdr": false,
+   "skill": -0.09485815602836878,
+   "p": 0.406,
+   "skill_ci95_years_bootstrap": [
+    -0.28579726816730916,
+    0.11367440643459313
+   ],
+   "skill_1878_onwards": -0.09485815602836878,
+   "skill_detrended": -0.010638297872340441,
+   "p_detrended": 1.0,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.8445,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.1999113475177305,
+   "percentile_among_random": 0.0,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "So many frosts in March, so many in May.",
+   "cond": {
+    "start": "03-01",
+    "end": "03-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "05-01",
+    "end": "05-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": 0.1654,
+   "census_fdr": true,
+   "skill": 0.1653543307086614,
+   "p": 0.011,
+   "skill_ci95_years_bootstrap": [
+    0.04403389403389406,
+    0.2831703351034609
+   ],
+   "skill_1878_onwards": 0.1351351351351351,
+   "skill_detrended": 0.0708661417322835,
+   "p_detrended": 0.311,
+   "persistence_skill": 0.0708661417322835,
+   "persistence_p": 0.3175,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.0708661417322835,
+   "random_rules_abs_skill_p95": 0.1653543307086614,
+   "percentile_among_random": 0.485,
+   "fdr": true,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "As it rains in March, so it rains in June.",
+   "cond": {
+    "start": "03-01",
+    "end": "03-31",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "06-01",
+    "end": "06-30",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.137,
+   "census_fdr": false,
+   "skill": -0.13696808510638298,
+   "p": 0.228,
+   "skill_ci95_years_bootstrap": [
+    -0.33791229135457723,
+    0.07955681818181816
+   ],
+   "skill_1878_onwards": -0.13696808510638298,
+   "skill_detrended": -0.09485815602836878,
+   "p_detrended": 0.417,
+   "persistence_skill": -0.09485815602836878,
+   "persistence_p": 0.418,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.05274822695035464,
+   "random_rules_abs_skill_p95": 0.15780141843971635,
+   "percentile_among_random": 0.635,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "High winds on these days [borrowing days, late March], a dry summer to follow",
+   "cond": {
+    "start": "03-29",
+    "end": "04-01",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "06-01",
+    "end": "08-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.0527,
+   "census_fdr": false,
+   "skill": -0.05274822695035464,
+   "p": 0.6765,
+   "skill_ci95_years_bootstrap": [
+    -0.24736527035056452,
+    0.15555555555555556
+   ],
+   "skill_1878_onwards": -0.05274822695035464,
+   "skill_detrended": -0.05274822695035464,
+   "p_detrended": 0.6805,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.832,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.2211879432624113,
+   "percentile_among_random": 0.38,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "After a wet April a dry June.",
+   "cond": {
+    "start": "04-01",
+    "end": "04-30",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "06-01",
+    "end": "06-30",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.0736,
+   "census_fdr": false,
+   "skill": 0.07358156028368795,
+   "p": 0.5465,
+   "skill_ci95_years_bootstrap": [
+    -0.12037887196044803,
+    0.28413903664302603
+   ],
+   "skill_1878_onwards": 0.07358156028368795,
+   "skill_detrended": 0.07358156028368795,
+   "p_detrended": 0.5335,
+   "persistence_skill": -0.09485815602836878,
+   "persistence_p": 0.4285,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.0631648936170213,
+   "random_rules_abs_skill_p95": 0.20097517730496417,
+   "percentile_among_random": 0.5,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If the first three days of April be foggy, there will be a flood in June.",
+   "cond": {
+    "start": "04-01",
+    "end": "04-03",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "06-01",
+    "end": "06-30",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.0106,
+   "census_fdr": false,
+   "skill": -0.010638297872340441,
+   "p": 1.0,
+   "skill_ci95_years_bootstrap": [
+    -0.20000886524822692,
+    0.218336356281643
+   ],
+   "skill_1878_onwards": -0.010638297872340441,
+   "skill_detrended": -0.010638297872340441,
+   "p_detrended": 1.0,
+   "persistence_skill": -0.010638297872340441,
+   "persistence_p": 1.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.2211879432624113,
+   "percentile_among_random": 0.0,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "A dry May is followed by a wet June.",
+   "cond": {
+    "start": "05-01",
+    "end": "05-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "06-01",
+    "end": "06-30",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.0736,
+   "census_fdr": false,
+   "skill": 0.07358156028368795,
+   "p": 0.546,
+   "skill_ci95_years_bootstrap": [
+    -0.13160259138412064,
+    0.27119827072152647
+   ],
+   "skill_1878_onwards": 0.07358156028368795,
+   "skill_detrended": 0.0314716312056737,
+   "p_detrended": 0.82,
+   "persistence_skill": -0.05274822695035464,
+   "persistence_p": 0.6795,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.05274822695035464,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.18,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "Wet May, dry July.",
+   "cond": {
+    "start": "05-01",
+    "end": "05-31",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "07-01",
+    "end": "07-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.0106,
+   "census_fdr": false,
+   "skill": -0.010638297872340441,
+   "p": 1.0,
+   "skill_ci95_years_bootstrap": [
+    -0.22075576241134753,
+    0.18685876623376613
+   ],
+   "skill_1878_onwards": -0.010638297872340441,
+   "skill_detrended": -0.05274822695035464,
+   "p_detrended": 0.6765,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.8395,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.305,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If May be cold and wet, September will be warm and dry, and vice-versa.",
+   "cond": {
+    "start": "05-01",
+    "end": "05-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "09-01",
+    "end": "09-30",
+    "var": "temp",
+    "dir": "above"
+   },
+   "n_years": 254,
+   "census_skill": -0.1181,
+   "census_fdr": false,
+   "skill": -0.11811023622047245,
+   "p": 0.071,
+   "skill_ci95_years_bootstrap": [
+    -0.2355200737126246,
+    0.004858627741090375
+   ],
+   "skill_1878_onwards": -0.10810810810810811,
+   "skill_detrended": -0.11811023622047245,
+   "p_detrended": 0.073,
+   "persistence_skill": 0.11811023622047245,
+   "persistence_p": 0.0835,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.0708661417322835,
+   "random_rules_abs_skill_p95": 0.19763779527559033,
+   "percentile_among_random": 0.855,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If May be cold and wet, September will be warm and dry, and vice-versa.",
+   "cond": {
+    "start": "05-01",
+    "end": "05-31",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "09-01",
+    "end": "09-30",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.0527,
+   "census_fdr": false,
+   "skill": -0.05274822695035464,
+   "p": 0.6955,
+   "skill_ci95_years_bootstrap": [
+    -0.2500831168659488,
+    0.16108030168589177
+   ],
+   "skill_1878_onwards": -0.05274822695035464,
+   "skill_detrended": -0.010638297872340441,
+   "p_detrended": 1.0,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.832,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.0,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "Storms from the east or south-east, between 17th and 23rd of March, indicate a wet summer.",
+   "cond": {
+    "start": "03-17",
+    "end": "03-23",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "06-01",
+    "end": "08-31",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.0527,
+   "census_fdr": false,
+   "skill": -0.05274822695035464,
+   "p": 0.685,
+   "skill_ci95_years_bootstrap": [
+    -0.26244459219858157,
+    0.16232204155374877
+   ],
+   "skill_1878_onwards": -0.05274822695035464,
+   "skill_detrended": -0.09485815602836878,
+   "p_detrended": 0.428,
+   "persistence_skill": -0.09485815602836878,
+   "persistence_p": 0.422,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.05274822695035464,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.655,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "A wet June makes a dry September.",
+   "cond": {
+    "start": "06-01",
+    "end": "06-30",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "09-01",
+    "end": "09-30",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.0315,
+   "census_fdr": false,
+   "skill": 0.0314716312056737,
+   "p": 0.823,
+   "skill_ci95_years_bootstrap": [
+    -0.1782358156028369,
+    0.2318257999861773
+   ],
+   "skill_1878_onwards": 0.0314716312056737,
+   "skill_detrended": -0.010638297872340441,
+   "p_detrended": 1.0,
+   "persistence_skill": -0.010638297872340441,
+   "persistence_p": 1.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.05274822695035464,
+   "random_rules_abs_skill_p95": 0.15780141843971635,
+   "percentile_among_random": 0.0,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If it rain on June 8th (St. Medard), it will rain forty days later.",
+   "cond": {
+    "start": "06-08",
+    "end": "06-08",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "06-09",
+    "end": "07-18",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.1157,
+   "census_fdr": false,
+   "skill": 0.11569148936170215,
+   "p": 0.2965,
+   "skill_ci95_years_bootstrap": [
+    -0.07447804073273415,
+    0.3221909477490749
+   ],
+   "skill_1878_onwards": 0.11569148936170215,
+   "skill_detrended": 0.15780141843971635,
+   "p_detrended": 0.17,
+   "persistence_skill": 0.15780141843971635,
+   "persistence_p": 0.1395,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.11569148936170215,
+   "random_rules_abs_skill_p95": 0.2632978723404255,
+   "percentile_among_random": 0.655,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If it rain on June 19th (St. Protais), it rains for forty days after.",
+   "cond": {
+    "start": "06-19",
+    "end": "06-19",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "06-20",
+    "end": "07-29",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.0736,
+   "census_fdr": false,
+   "skill": 0.07358156028368795,
+   "p": 0.5365,
+   "skill_ci95_years_bootstrap": [
+    -0.120035778175313,
+    0.27415576899161026
+   ],
+   "skill_1878_onwards": 0.07358156028368795,
+   "skill_detrended": 0.07358156028368795,
+   "p_detrended": 0.546,
+   "persistence_skill": 0.07358156028368795,
+   "persistence_p": 0.535,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.09485815602836878,
+   "random_rules_abs_skill_p95": 0.2632978723404255,
+   "percentile_among_random": 0.31,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If St. Vitus's Day be rainy weather, it will rain for thirty days together.",
+   "cond": {
+    "start": "06-15",
+    "end": "06-15",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "06-16",
+    "end": "07-15",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.2631,
+   "census_fdr": false,
+   "skill": 0.26308784383318545,
+   "p": 0.014,
+   "skill_ci95_years_bootstrap": [
+    0.06763368983957221,
+    0.4517287234042553
+   ],
+   "skill_1878_onwards": 0.26308784383318545,
+   "skill_detrended": 0.1999113475177305,
+   "p_detrended": 0.07,
+   "persistence_skill": 0.1999113475177305,
+   "persistence_p": 0.059,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.11569148936170215,
+   "random_rules_abs_skill_p95": 0.26433953900709184,
+   "percentile_among_random": 0.785,
+   "fdr": true,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "When it is hottest in June, it will be coldest in the corresponding days of the next February.",
+   "cond": {
+    "start": "06-01",
+    "end": "06-30",
+    "var": "temp",
+    "dir": "above"
+   },
+   "out": {
+    "start": "02-01",
+    "end": "02-28",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": -0.0394,
+   "census_fdr": false,
+   "skill": -0.039370078740157466,
+   "p": 0.623,
+   "skill_ci95_years_bootstrap": [
+    -0.15972389453293748,
+    0.07888553482807519
+   ],
+   "skill_1878_onwards": -0.08108108108108109,
+   "skill_detrended": 0.007874015748031482,
+   "p_detrended": 1.0,
+   "persistence_skill": -0.007874015748031482,
+   "persistence_p": 1.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.039370078740157466,
+   "random_rules_abs_skill_p95": 0.14960629921259838,
+   "percentile_among_random": 0.01,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If it rains on June 27th, it will rain seven weeks.",
+   "cond": {
+    "start": "06-27",
+    "end": "06-27",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "06-27",
+    "end": "08-15",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.1999,
+   "census_fdr": false,
+   "skill": 0.1999113475177305,
+   "p": 0.071,
+   "skill_ci95_years_bootstrap": [
+    -0.0005251730713426756,
+    0.3896596953578336
+   ],
+   "skill_1878_onwards": 0.1999113475177305,
+   "skill_detrended": 0.1999113475177305,
+   "p_detrended": 0.0695,
+   "persistence_skill": 0.1999113475177305,
+   "persistence_p": 0.064,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.11569148936170215,
+   "random_rules_abs_skill_p95": 0.2841312056737589,
+   "percentile_among_random": 0.735,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If the 1st of July it be rainy weather, It will rain more or less for four weeks together.",
+   "cond": {
+    "start": "07-01",
+    "end": "07-01",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "07-01",
+    "end": "07-29",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.242,
+   "census_fdr": false,
+   "skill": 0.24202127659574468,
+   "p": 0.0235,
+   "skill_ci95_years_bootstrap": [
+    0.038365128660159696,
+    0.4357440812293296
+   ],
+   "skill_1878_onwards": 0.24202127659574468,
+   "skill_detrended": 0.15780141843971635,
+   "p_detrended": 0.155,
+   "persistence_skill": 0.15780141843971635,
+   "persistence_p": 0.1665,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.17907801418439723,
+   "random_rules_abs_skill_p95": 0.32834663120567303,
+   "percentile_among_random": 0.38,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If it rains on St. Mary's Day, it will rain for four weeks.",
+   "cond": {
+    "start": "07-02",
+    "end": "07-02",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "07-02",
+    "end": "07-30",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.1157,
+   "census_fdr": false,
+   "skill": 0.11569148936170215,
+   "p": 0.305,
+   "skill_ci95_years_bootstrap": [
+    -0.08629606683767373,
+    0.3320267114228792
+   ],
+   "skill_1878_onwards": 0.11569148936170215,
+   "skill_detrended": 0.07358156028368795,
+   "p_detrended": 0.529,
+   "persistence_skill": 0.07358156028368795,
+   "persistence_p": 0.5195,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.1999113475177305,
+   "random_rules_abs_skill_p95": 0.3683510638297872,
+   "percentile_among_random": 0.135,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If it rains on first dog-day, it will rain for forty days after.",
+   "cond": {
+    "start": "07-03",
+    "end": "07-03",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "07-03",
+    "end": "08-12",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.242,
+   "census_fdr": false,
+   "skill": 0.24202127659574468,
+   "p": 0.0275,
+   "skill_ci95_years_bootstrap": [
+    0.03917609657499361,
+    0.43633255933952525
+   ],
+   "skill_1878_onwards": 0.24202127659574468,
+   "skill_detrended": 0.24202127659574468,
+   "p_detrended": 0.0265,
+   "persistence_skill": 0.24202127659574468,
+   "persistence_p": 0.0295,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.13696808510638298,
+   "random_rules_abs_skill_p95": 0.30540780141843976,
+   "percentile_among_random": 0.845,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "Bullion's Day, gif ye be fair, For forty days 'twill rain nae mair.",
+   "cond": {
+    "start": "07-04",
+    "end": "07-04",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "07-04",
+    "end": "08-13",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.1999,
+   "census_fdr": false,
+   "skill": 0.1999113475177305,
+   "p": 0.0625,
+   "skill_ci95_years_bootstrap": [
+    0.004543624979671465,
+    0.38831264775413715
+   ],
+   "skill_1878_onwards": 0.1999113475177305,
+   "skill_detrended": 0.24202127659574468,
+   "p_detrended": 0.022,
+   "persistence_skill": 0.24202127659574468,
+   "persistence_p": 0.0285,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.13696808510638298,
+   "random_rules_abs_skill_p95": 0.2632978723404255,
+   "percentile_among_random": 0.88,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If it rains on July 10th, it will rain for seven weeks.",
+   "cond": {
+    "start": "07-10",
+    "end": "07-10",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "07-10",
+    "end": "08-28",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.1157,
+   "census_fdr": false,
+   "skill": 0.11569148936170215,
+   "p": 0.299,
+   "skill_ci95_years_bootstrap": [
+    -0.08422521106344635,
+    0.31252332144979195
+   ],
+   "skill_1878_onwards": 0.11569148936170215,
+   "skill_detrended": 0.0314716312056737,
+   "p_detrended": 0.852,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.849,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.11569148936170215,
+   "random_rules_abs_skill_p95": 0.26433953900709184,
+   "percentile_among_random": 0.07,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "When the months of July, August, and September are unusually hot, January will be the coldest month.",
+   "cond": {
+    "start": "07-01",
+    "end": "09-30",
+    "var": "temp",
+    "dir": "above"
+   },
+   "out": {
+    "start": "01-01",
+    "end": "01-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": -0.1102,
+   "census_fdr": false,
+   "skill": -0.11023622047244097,
+   "p": 0.104,
+   "skill_ci95_years_bootstrap": [
+    -0.22174937965260547,
+    0.012715698784290732
+   ],
+   "skill_1878_onwards": -0.08108108108108109,
+   "skill_detrended": -0.023622047244094446,
+   "p_detrended": 0.804,
+   "persistence_skill": 0.023622047244094446,
+   "persistence_p": 0.8045,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.0708661417322835,
+   "random_rules_abs_skill_p95": 0.1653543307086614,
+   "percentile_among_random": 0.08,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If St. Swithin weep, that year, the proverb says, The weather will be foul for forty days.",
+   "cond": {
+    "start": "07-15",
+    "end": "07-15",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "07-15",
+    "end": "08-24",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.0949,
+   "census_fdr": false,
+   "skill": -0.09485815602836878,
+   "p": 0.401,
+   "skill_ci95_years_bootstrap": [
+    -0.30453235815602836,
+    0.10389006342494699
+   ],
+   "skill_1878_onwards": -0.09485815602836878,
+   "skill_detrended": -0.09485815602836878,
+   "p_detrended": 0.431,
+   "persistence_skill": -0.09485815602836878,
+   "persistence_p": 0.4195,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.13696808510638298,
+   "random_rules_abs_skill_p95": 0.30540780141843976,
+   "percentile_among_random": 0.35,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "St. Swithin's Day, an ye be fair, For forty days 'twill rain nae mair",
+   "cond": {
+    "start": "07-15",
+    "end": "07-15",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "07-15",
+    "end": "08-24",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.0741,
+   "census_fdr": false,
+   "skill": -0.07409050576752446,
+   "p": 0.5355,
+   "skill_ci95_years_bootstrap": [
+    -0.2832052863563241,
+    0.1293283853716196
+   ],
+   "skill_1878_onwards": -0.07409050576752446,
+   "skill_detrended": -0.09485815602836878,
+   "p_detrended": 0.439,
+   "persistence_skill": -0.09485815602836878,
+   "persistence_p": 0.407,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.11569148936170215,
+   "random_rules_abs_skill_p95": 0.3064494680851061,
+   "percentile_among_random": 0.365,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "Thunderstorms in the beginning of August will generally be followed by others all the month.",
+   "cond": {
+    "start": "08-01",
+    "end": "08-10",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "08-01",
+    "end": "08-31",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.4105,
+   "census_fdr": true,
+   "skill": 0.4104609929078014,
+   "p": 0.0,
+   "skill_ci95_years_bootstrap": [
+    0.21680173518682835,
+    0.5962947118241235
+   ],
+   "skill_1878_onwards": 0.4104609929078014,
+   "skill_detrended": 0.45257092198581567,
+   "p_detrended": 0.0,
+   "persistence_skill": 0.45257092198581567,
+   "persistence_p": 0.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.4104609929078014,
+   "random_rules_abs_skill_p95": 0.5580673758865249,
+   "percentile_among_random": 0.63,
+   "fdr": true,
+   "fdr_detrended": true,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If the first week in August is unusually warm, the winter will be white and long.",
+   "cond": {
+    "start": "08-01",
+    "end": "08-07",
+    "var": "temp",
+    "dir": "above"
+   },
+   "out": {
+    "start": "12-01",
+    "end": "02-28",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": -0.0394,
+   "census_fdr": false,
+   "skill": -0.039370078740157466,
+   "p": 0.6235,
+   "skill_ci95_years_bootstrap": [
+    -0.1614697494769754,
+    0.08661417322834647
+   ],
+   "skill_1878_onwards": -0.027214611872146188,
+   "skill_detrended": -0.05511811023622043,
+   "p_detrended": 0.454,
+   "persistence_skill": 0.05511811023622043,
+   "persistence_p": 0.445,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.039370078740157466,
+   "random_rules_abs_skill_p95": 0.10236220472440949,
+   "percentile_among_random": 0.565,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If on St. Lawrence's Day the weather be fine, fair autumn and good wine may be hoped for.",
+   "cond": {
+    "start": "08-10",
+    "end": "08-10",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "09-01",
+    "end": "11-30",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.137,
+   "census_fdr": false,
+   "skill": -0.13696808510638298,
+   "p": 0.2095,
+   "skill_ci95_years_bootstrap": [
+    -0.3461999113475177,
+    0.05231604609929075
+   ],
+   "skill_1878_onwards": -0.13696808510638298,
+   "skill_detrended": -0.13696808510638298,
+   "p_detrended": 0.217,
+   "persistence_skill": -0.13696808510638298,
+   "persistence_p": 0.217,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.81,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If this day be misty, the morning beginning with a hoar-frost, the cold weather will soon come, and a hard winter.",
+   "cond": {
+    "start": "08-24",
+    "end": "08-24",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "12-01",
+    "end": "02-28",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": 0.0236,
+   "census_fdr": false,
+   "skill": 0.023645503630608855,
+   "p": 0.7055,
+   "skill_ci95_years_bootstrap": [
+    -0.08838979964340882,
+    0.15144001302335225
+   ],
+   "skill_1878_onwards": -0.00018264840182652398,
+   "skill_detrended": -0.007874015748031482,
+   "p_detrended": 1.0,
+   "persistence_skill": -0.007874015748031482,
+   "persistence_p": 1.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.039370078740157466,
+   "random_rules_abs_skill_p95": 0.11889763779527533,
+   "percentile_among_random": 0.0,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If it rains this day, it will rain the forty days after.",
+   "cond": {
+    "start": "08-24",
+    "end": "08-24",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "08-25",
+    "end": "10-03",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.0527,
+   "census_fdr": false,
+   "skill": -0.05274822695035464,
+   "p": 0.6785,
+   "skill_ci95_years_bootstrap": [
+    -0.25465919173993706,
+    0.147732135216089
+   ],
+   "skill_1878_onwards": -0.05274822695035464,
+   "skill_detrended": -0.05274822695035464,
+   "p_detrended": 0.69,
+   "persistence_skill": -0.05274822695035464,
+   "persistence_p": 0.6925,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.11569148936170215,
+   "random_rules_abs_skill_p95": 0.24308510638297837,
+   "percentile_among_random": 0.185,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "When September has been rainy, the following May is generally dry",
+   "cond": {
+    "start": "09-01",
+    "end": "09-30",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "05-01",
+    "end": "05-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.0106,
+   "census_fdr": false,
+   "skill": -0.010638297872340441,
+   "p": 1.0,
+   "skill_ci95_years_bootstrap": [
+    -0.2089565976476354,
+    0.19923024945408324
+   ],
+   "skill_1878_onwards": -0.010638297872340441,
+   "skill_detrended": -0.010638297872340441,
+   "p_detrended": 1.0,
+   "persistence_skill": -0.010638297872340441,
+   "persistence_p": 1.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.2211879432624113,
+   "percentile_among_random": 0.0,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "When May is dry, the following September is apt to be wet",
+   "cond": {
+    "start": "05-01",
+    "end": "05-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "09-01",
+    "end": "09-30",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.0527,
+   "census_fdr": false,
+   "skill": -0.05274822695035464,
+   "p": 0.682,
+   "skill_ci95_years_bootstrap": [
+    -0.246682915921288,
+    0.14631527947776415
+   ],
+   "skill_1878_onwards": -0.05274822695035464,
+   "skill_detrended": -0.010638297872340441,
+   "p_detrended": 1.0,
+   "persistence_skill": -0.010638297872340441,
+   "persistence_p": 1.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.05274822695035464,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.0,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "A wet September, drought for next summer",
+   "cond": {
+    "start": "09-01",
+    "end": "09-30",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "06-01",
+    "end": "08-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 94,
+   "census_skill": 0.1489,
+   "census_fdr": false,
+   "skill": 0.148936170212766,
+   "p": 0.2295,
+   "skill_ci95_years_bootstrap": [
+    -0.06071105072463767,
+    0.343304417502787
+   ],
+   "skill_1878_onwards": 0.148936170212766,
+   "skill_detrended": 0.06382978723404253,
+   "p_detrended": 0.676,
+   "persistence_skill": -0.06382978723404253,
+   "persistence_p": 0.6915,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.09485815602836878,
+   "random_rules_abs_skill_p95": 0.234441489361702,
+   "percentile_among_random": 0.36,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If the storms in September clear off warm, all the storms of the following winter will be warm.",
+   "cond": {
+    "start": "09-01",
+    "end": "09-30",
+    "var": "temp",
+    "dir": "above"
+   },
+   "out": {
+    "start": "12-01",
+    "end": "02-28",
+    "var": "temp",
+    "dir": "above"
+   },
+   "n_years": 254,
+   "census_skill": 0.1339,
+   "census_fdr": false,
+   "skill": 0.13385826771653542,
+   "p": 0.0425,
+   "skill_ci95_years_bootstrap": [
+    0.018938984072511305,
+    0.24688019824541407
+   ],
+   "skill_1878_onwards": 0.14864864864864863,
+   "skill_detrended": -0.05511811023622043,
+   "p_detrended": 0.456,
+   "persistence_skill": -0.05511811023622043,
+   "persistence_p": 0.4405,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.0708661417322835,
+   "random_rules_abs_skill_p95": 0.14960629921259838,
+   "percentile_among_random": 0.32,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "When a cold spell occurs in September and passes without a frost, a frost will not occur until the same time in October.",
+   "cond": {
+    "start": "09-01",
+    "end": "09-30",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "10-01",
+    "end": "10-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": 0.1969,
+   "census_fdr": true,
+   "skill": 0.19685039370078744,
+   "p": 0.0025,
+   "skill_ci95_years_bootstrap": [
+    0.0679383028447045,
+    0.3226722135271029
+   ],
+   "skill_1878_onwards": 0.1351351351351351,
+   "skill_detrended": 0.023622047244094446,
+   "p_detrended": 0.804,
+   "persistence_skill": 0.023622047244094446,
+   "persistence_p": 0.8135,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.13385826771653542,
+   "random_rules_abs_skill_p95": 0.29133858267716534,
+   "percentile_among_random": 0.03,
+   "fdr": true,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "Fair on September 1st, fair for the month.",
+   "cond": {
+    "start": "09-01",
+    "end": "09-01",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "09-01",
+    "end": "09-30",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.1999,
+   "census_fdr": false,
+   "skill": 0.1999113475177305,
+   "p": 0.0645,
+   "skill_ci95_years_bootstrap": [
+    -0.004798136645962769,
+    0.394118791658831
+   ],
+   "skill_1878_onwards": 0.1999113475177305,
+   "skill_detrended": 0.2841312056737589,
+   "p_detrended": 0.008,
+   "persistence_skill": 0.2841312056737589,
+   "persistence_p": 0.0055,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.15780141843971635,
+   "random_rules_abs_skill_p95": 0.30540780141843976,
+   "percentile_among_random": 0.93,
+   "fdr": false,
+   "fdr_detrended": true,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If the hart and the hind meet dry and part dry on Rood Day fair, for sax weeks, of rain there'll be nae mail.",
+   "cond": {
+    "start": "09-14",
+    "end": "09-14",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "09-14",
+    "end": "10-26",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.1157,
+   "census_fdr": false,
+   "skill": 0.11569148936170215,
+   "p": 0.3195,
+   "skill_ci95_years_bootstrap": [
+    -0.07279281277728476,
+    0.32301464063886426
+   ],
+   "skill_1878_onwards": 0.11569148936170215,
+   "skill_detrended": 0.0314716312056737,
+   "p_detrended": 0.8385,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.8385,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.13696808510638298,
+   "random_rules_abs_skill_p95": 0.28519503546099256,
+   "percentile_among_random": 0.07,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If it does not rain on St. Michael's and Gallus, a dry spring is indicated for the next year.",
+   "cond": {
+    "start": "09-29",
+    "end": "10-16",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "03-01",
+    "end": "05-31",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.0315,
+   "census_fdr": false,
+   "skill": 0.0314716312056737,
+   "p": 0.8525,
+   "skill_ci95_years_bootstrap": [
+    -0.1750033422459893,
+    0.2263099550312463
+   ],
+   "skill_1878_onwards": 0.0314716312056737,
+   "skill_detrended": 0.0314716312056737,
+   "p_detrended": 0.8475,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.845,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.05274822695035464,
+   "random_rules_abs_skill_p95": 0.13696808510638298,
+   "percentile_among_random": 0.285,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "When it freezes and snows in October, January will bring mild weather.",
+   "cond": {
+    "start": "10-01",
+    "end": "10-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "01-01",
+    "end": "01-31",
+    "var": "temp",
+    "dir": "above"
+   },
+   "n_years": 254,
+   "census_skill": -0.1102,
+   "census_fdr": false,
+   "skill": -0.11023622047244097,
+   "p": 0.0935,
+   "skill_ci95_years_bootstrap": [
+    -0.23230693047636772,
+    0.015030797561595087
+   ],
+   "skill_1878_onwards": 0.0,
+   "skill_detrended": 0.0708661417322835,
+   "p_detrended": 0.321,
+   "persistence_skill": -0.0708661417322835,
+   "persistence_p": 0.3325,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.0708661417322835,
+   "random_rules_abs_skill_p95": 0.1346456692913383,
+   "percentile_among_random": 0.455,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If October bring heavy frosts and winds, then will January and February be mild.",
+   "cond": {
+    "start": "10-01",
+    "end": "10-31",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "01-01",
+    "end": "02-28",
+    "var": "temp",
+    "dir": "above"
+   },
+   "n_years": 254,
+   "census_skill": -0.1969,
+   "census_fdr": true,
+   "skill": -0.19685039370078744,
+   "p": 0.0015,
+   "skill_ci95_years_bootstrap": [
+    -0.3151714380518207,
+    -0.06952432734729387
+   ],
+   "skill_1878_onwards": -0.054054054054054,
+   "skill_detrended": 0.05511811023622043,
+   "p_detrended": 0.4535,
+   "persistence_skill": -0.05511811023622043,
+   "persistence_p": 0.4375,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.0708661417322835,
+   "random_rules_abs_skill_p95": 0.2125984251968504,
+   "percentile_among_random": 0.4,
+   "fdr": true,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "Warm October, cold February.",
+   "cond": {
+    "start": "10-01",
+    "end": "10-31",
+    "var": "temp",
+    "dir": "above"
+   },
+   "out": {
+    "start": "02-01",
+    "end": "02-28",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": -0.1024,
+   "census_fdr": false,
+   "skill": -0.10236220472440949,
+   "p": 0.138,
+   "skill_ci95_years_bootstrap": [
+    -0.21912050512628162,
+    0.021388646419045837
+   ],
+   "skill_1878_onwards": -0.10810810810810811,
+   "skill_detrended": -0.039370078740157466,
+   "p_detrended": 0.6225,
+   "persistence_skill": 0.039370078740157466,
+   "persistence_p": 0.6175,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.06299212598425197,
+   "random_rules_abs_skill_p95": 0.18110236220472437,
+   "percentile_among_random": 0.19,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "October and November cold indicate that the following January and February will be mild and dry.",
+   "cond": {
+    "start": "10-01",
+    "end": "11-30",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "01-01",
+    "end": "02-28",
+    "var": "temp",
+    "dir": "above"
+   },
+   "n_years": 254,
+   "census_skill": -0.0866,
+   "census_fdr": false,
+   "skill": -0.08661417322834647,
+   "p": 0.2,
+   "skill_ci95_years_bootstrap": [
+    -0.20472440944881887,
+    0.039126949434971886
+   ],
+   "skill_1878_onwards": 0.027027027027026973,
+   "skill_detrended": 0.023622047244094446,
+   "p_detrended": 0.794,
+   "persistence_skill": -0.023622047244094446,
+   "persistence_p": 0.799,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.08661417322834647,
+   "random_rules_abs_skill_p95": 0.19685039370078744,
+   "percentile_among_random": 0.1,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "October and November cold indicate that the following January and February will be mild and dry.",
+   "cond": {
+    "start": "10-01",
+    "end": "11-30",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "01-01",
+    "end": "02-28",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.1578,
+   "census_fdr": false,
+   "skill": 0.15780141843971635,
+   "p": 0.156,
+   "skill_ci95_years_bootstrap": [
+    -0.03599233787034091,
+    0.34849391521598966
+   ],
+   "skill_1878_onwards": 0.15780141843971635,
+   "skill_detrended": -0.010638297872340441,
+   "p_detrended": 1.0,
+   "persistence_skill": 0.07358156028368795,
+   "persistence_p": 0.5475,
+   "skill_given_persistence": -0.016370997423628988,
+   "p_given_persistence": 0.8605,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.15780141843971635,
+   "percentile_among_random": 0.0,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "If there's ice in November that will bear a duck. There'll be nothing after but sludge and muck.",
+   "cond": {
+    "start": "11-01",
+    "end": "11-30",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "12-01",
+    "end": "02-28",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.0736,
+   "census_fdr": false,
+   "skill": 0.07358156028368795,
+   "p": 0.539,
+   "skill_ci95_years_bootstrap": [
+    -0.1161373279654138,
+    0.2719497607655502
+   ],
+   "skill_1878_onwards": 0.07358156028368795,
+   "skill_detrended": 0.07358156028368795,
+   "p_detrended": 0.5575,
+   "persistence_skill": -0.05274822695035464,
+   "persistence_p": 0.6785,
+   "skill_given_persistence": 0.06607974867598522,
+   "p_given_persistence": 0.5605,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.495,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "Ice in November brings mud in December.",
+   "cond": {
+    "start": "11-01",
+    "end": "11-30",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "12-01",
+    "end": "12-31",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.1791,
+   "census_fdr": false,
+   "skill": -0.17907801418439723,
+   "p": 0.1095,
+   "skill_ci95_years_bootstrap": [
+    -0.3546737726098191,
+    0.025391460932198833
+   ],
+   "skill_1878_onwards": -0.17907801418439723,
+   "skill_detrended": -0.09485815602836878,
+   "p_detrended": 0.43,
+   "persistence_skill": 0.07358156028368795,
+   "persistence_p": 0.514,
+   "skill_given_persistence": -0.08244340433661283,
+   "p_given_persistence": 0.505,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.2632978723404255,
+   "percentile_among_random": 0.525,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "If All Saints' Day will bring out the winter, St. Martin's Day will bring out Indian summer.",
+   "cond": {
+    "start": "11-01",
+    "end": "11-01",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "11-11",
+    "end": "11-11",
+    "var": "temp",
+    "dir": "above"
+   },
+   "n_years": 254,
+   "census_skill": -0.1654,
+   "census_fdr": true,
+   "skill": -0.1653543307086614,
+   "p": 0.0105,
+   "skill_ci95_years_bootstrap": [
+    -0.2897495644101385,
+    -0.04388749778572493
+   ],
+   "skill_1878_onwards": -0.16216216216216212,
+   "skill_detrended": -0.14960629921259838,
+   "p_detrended": 0.021,
+   "persistence_skill": 0.14960629921259838,
+   "persistence_p": 0.02,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.08661417322834647,
+   "random_rules_abs_skill_p95": 0.19685039370078744,
+   "percentile_among_random": 0.78,
+   "fdr": true,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If this day (All Saints') be fair, the next winter will bring but little rain and snow along with it.",
+   "cond": {
+    "start": "11-01",
+    "end": "11-01",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "12-01",
+    "end": "02-28",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.0315,
+   "census_fdr": false,
+   "skill": 0.0314716312056737,
+   "p": 0.837,
+   "skill_ci95_years_bootstrap": [
+    -0.17481039995981978,
+    0.23221153846153836
+   ],
+   "skill_1878_onwards": 0.0314716312056737,
+   "skill_detrended": 0.0314716312056737,
+   "p_detrended": 0.8315,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.8375,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.1999113475177305,
+   "percentile_among_random": 0.165,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If ducks do swim at Hollantide, At Christmas they will slide.",
+   "cond": {
+    "start": "11-01",
+    "end": "11-01",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "12-25",
+    "end": "12-25",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.1999,
+   "census_fdr": false,
+   "skill": 0.1999113475177305,
+   "p": 0.069,
+   "skill_ci95_years_bootstrap": [
+    0.00746834625322995,
+    0.39265004492362987
+   ],
+   "skill_1878_onwards": 0.1999113475177305,
+   "skill_detrended": 0.11569148936170215,
+   "p_detrended": 0.295,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.8395,
+   "skill_given_persistence": 0.1212587023113339,
+   "p_given_persistence": 0.2885,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.1999113475177305,
+   "percentile_among_random": 0.665,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "If the geese at Martin's Day stand on ice, they will walk in mud at Christmas.",
+   "cond": {
+    "start": "11-11",
+    "end": "11-11",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "12-25",
+    "end": "12-25",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": -0.0741,
+   "census_fdr": false,
+   "skill": -0.07409050576752446,
+   "p": 0.5655,
+   "skill_ci95_years_bootstrap": [
+    -0.2628604407766807,
+    0.1340253851309256
+   ],
+   "skill_1878_onwards": -0.07409050576752446,
+   "skill_detrended": -0.13696808510638298,
+   "p_detrended": 0.198,
+   "persistence_skill": -0.010638297872340441,
+   "persistence_p": 1.0,
+   "skill_given_persistence": -0.14605448891436093,
+   "p_given_persistence": 0.199,
+   "condition_is_persistence": false,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.17907801418439723,
+   "percentile_among_random": 0.775,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": false
+  },
+  {
+   "quote": "As at Catherine foul or fair, so will be the next February.",
+   "cond": {
+    "start": "11-25",
+    "end": "11-25",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "02-01",
+    "end": "02-28",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 95,
+   "census_skill": 0.0315,
+   "census_fdr": false,
+   "skill": 0.0314716312056737,
+   "p": 0.84,
+   "skill_ci95_years_bootstrap": [
+    -0.17755490956072348,
+    0.24247562056737593
+   ],
+   "skill_1878_onwards": 0.0314716312056737,
+   "skill_detrended": 0.0314716312056737,
+   "p_detrended": 0.8375,
+   "persistence_skill": 0.0314716312056737,
+   "persistence_p": 0.828,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.1999113475177305,
+   "percentile_among_random": 0.13,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "As at Catherine foul or fair, so will be the next February.",
+   "cond": {
+    "start": "11-25",
+    "end": "11-25",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "02-01",
+    "end": "02-28",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": -0.0106,
+   "census_fdr": false,
+   "skill": -0.010638297872340441,
+   "p": 1.0,
+   "skill_ci95_years_bootstrap": [
+    -0.2207630513520689,
+    0.1772898702471873
+   ],
+   "skill_1878_onwards": -0.010638297872340441,
+   "skill_detrended": -0.010638297872340441,
+   "p_detrended": 1.0,
+   "persistence_skill": -0.010638297872340441,
+   "persistence_p": 1.0,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.1999113475177305,
+   "percentile_among_random": 0.0,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "Frost on the shortest day is said to indicate a severe winter.",
+   "cond": {
+    "start": "12-21",
+    "end": "12-21",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "12-22",
+    "end": "02-28",
+    "var": "temp",
+    "dir": "below"
+   },
+   "n_years": 254,
+   "census_skill": 0.2126,
+   "census_fdr": true,
+   "skill": 0.2125984251968504,
+   "p": 0.001,
+   "skill_ci95_years_bootstrap": [
+    0.08769283981988975,
+    0.3298051851819779
+   ],
+   "skill_1878_onwards": 0.1891891891891892,
+   "skill_detrended": 0.18110236220472437,
+   "p_detrended": 0.0045,
+   "persistence_skill": 0.18110236220472437,
+   "persistence_p": 0.0055,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.13385826771653542,
+   "random_rules_abs_skill_p95": 0.29133858267716534,
+   "percentile_among_random": 0.67,
+   "fdr": true,
+   "fdr_detrended": true,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If ice will bear a man before Christmas, it will not bear a mouse afterwards.",
+   "cond": {
+    "start": "12-01",
+    "end": "12-24",
+    "var": "temp",
+    "dir": "below"
+   },
+   "out": {
+    "start": "12-26",
+    "end": "12-31",
+    "var": "temp",
+    "dir": "above"
+   },
+   "n_years": 254,
+   "census_skill": -0.2126,
+   "census_fdr": true,
+   "skill": -0.2125984251968504,
+   "p": 0.0005,
+   "skill_ci95_years_bootstrap": [
+    -0.33679757700181073,
+    -0.08393877297565829
+   ],
+   "skill_1878_onwards": -0.054054054054054,
+   "skill_detrended": -0.14960629921259838,
+   "p_detrended": 0.018,
+   "persistence_skill": 0.14960629921259838,
+   "persistence_p": 0.028,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.14960629921259838,
+   "random_rules_abs_skill_p95": 0.29133858267716534,
+   "percentile_among_random": 0.385,
+   "fdr": true,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "If it rain much during the twelve days after Christmas, it will be a wet year.",
+   "cond": {
+    "start": "12-26",
+    "end": "01-06",
+    "var": "precip",
+    "dir": "above"
+   },
+   "out": {
+    "start": "01-01",
+    "end": "12-31",
+    "var": "precip",
+    "dir": "above"
+   },
+   "n_years": 94,
+   "census_skill": 0.2766,
+   "census_fdr": false,
+   "skill": 0.2765957446808511,
+   "p": 0.0125,
+   "skill_ci95_years_bootstrap": [
+    0.06431119148872891,
+    0.4643407091097308
+   ],
+   "skill_1878_onwards": 0.2765957446808511,
+   "skill_detrended": 0.3191489361702127,
+   "p_detrended": 0.0015,
+   "persistence_skill": 0.3191489361702127,
+   "persistence_p": 0.0035,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.23404255319148937,
+   "percentile_among_random": 0.98,
+   "fdr": true,
+   "fdr_detrended": true,
+   "fdr_given_persistence": null
+  },
+  {
+   "quote": "As the equinoctial storms clear, so will all storms clear for the six months.",
+   "cond": {
+    "start": "03-21",
+    "end": "03-21",
+    "var": "precip",
+    "dir": "below"
+   },
+   "out": {
+    "start": "03-21",
+    "end": "09-21",
+    "var": "precip",
+    "dir": "below"
+   },
+   "n_years": 95,
+   "census_skill": 0.1578,
+   "census_fdr": false,
+   "skill": 0.15780141843971635,
+   "p": 0.1465,
+   "skill_ci95_years_bootstrap": [
+    -0.026435672514619847,
+    0.34840627014829145
+   ],
+   "skill_1878_onwards": 0.15780141843971635,
+   "skill_detrended": 0.1999113475177305,
+   "p_detrended": 0.0655,
+   "persistence_skill": 0.1999113475177305,
+   "persistence_p": 0.0595,
+   "skill_given_persistence": null,
+   "p_given_persistence": null,
+   "condition_is_persistence": true,
+   "random_rules_abs_skill_median": 0.07358156028368795,
+   "random_rules_abs_skill_p95": 0.22222960992907762,
+   "percentile_among_random": 0.92,
+   "fdr": false,
+   "fdr_detrended": false,
+   "fdr_given_persistence": null
+  }
+ ]
+}
